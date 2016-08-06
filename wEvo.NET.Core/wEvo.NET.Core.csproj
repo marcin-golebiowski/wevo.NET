@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F7A43B8F-2C11-42B3-A3D2-9F462FE5B890}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>wEvo.NET.Core</RootNamespace>
+    <AssemblyName>wEvo.NET.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Algorithm.java" />
+    <Content Include="CachedObjectiveFunction.java" />
+    <Content Include="Distribution\master\DistributedPopulation.java" />
+    <Content Include="Distribution\master\DistributedPopulationBuilder.java" />
+    <Content Include="Distribution\master\MasterSlaveEvaluator.java" />
+    <Content Include="Distribution\master\PopulationDistributor.java" />
+    <Content Include="Distribution\master\servlets\DistributionServlet.java" />
+    <Content Include="Distribution\master\servlets\RegistrationServlet.java" />
+    <Content Include="Distribution\master\servlets\StatisticsServlet.java" />
+    <Content Include="Distribution\master\SlaveIdGenerator.java" />
+    <Content Include="Distribution\master\SlaveInformation.java" />
+    <Content Include="Distribution\master\SlaveManager.java" />
+    <Content Include="Distribution\master\StatisticsManager.java" />
+    <Content Include="Distribution\master\statistics\IterationStatistics.java" />
+    <Content Include="Distribution\master\statistics\SlaveStatistics.java" />
+    <Content Include="Distribution\master\statistics\Statistics.java" />
+    <Content Include="Distribution\master\statistics\StatisticsHtmlPrinter.java" />
+    <Content Include="Distribution\master\statistics\TaskStatistics.java" />
+    <Content Include="Distribution\master\TaskManager.java" />
+    <Content Include="Distribution\master\UniformDistributor.java" />
+    <Content Include="Distribution\serialization\EvaluationResult.java" />
+    <Content Include="Distribution\serialization\EvaluationResultBuilder.java" />
+    <Content Include="Distribution\serialization\EvaluationTask.java" />
+    <Content Include="Distribution\serialization\JavaIOResultSerializer.java" />
+    <Content Include="Distribution\serialization\JavaIOTaskSerializer.java" />
+    <Content Include="Distribution\serialization\ResultSerializer.java" />
+    <Content Include="Distribution\serialization\TaskSerializer.java" />
+    <Content Include="Distribution\slave\Slave.java" />
+    <Content Include="Distribution\slave\SlaveRegistrator.java" />
+    <Content Include="Distribution\slave\TaskExchanger.java" />
+    <Content Include="Distribution\utils\WevoURL.java" />
+    <Content Include="Exitcriteria\IndividualHasntImproved.java" />
+    <Content Include="Exitcriteria\MaxIterations.java" />
+    <Content Include="Factory.java" />
+    <Content Include="Individuals\BinaryVector.java" />
+    <Content Include="Individuals\NaturalVector.java" />
+    <Content Include="Individuals\Permutation.java" />
+    <Content Include="Individuals\RealVector.java" />
+    <Content Include="MultiThreadedEvaluator.java" />
+    <Content Include="ObjectiveFunction.java" />
+    <Content Include="Operator.java" />
+    <Content Include="Operators\AddHardcodedIndividual.java" />
+    <Content Include="Operators\BestFractionSelection.java" />
+    <Content Include="Operators\binary\UniformCrossover.java" />
+    <Content Include="Operators\binary\UniformProbabilityNegationMutation.java" />
+    <Content Include="Operators\CombineBestWithOtherOperator.java" />
+    <Content Include="Operators\natural\GaussianAdditionMutation.java" />
+    <Content Include="Operators\natural\IntervalCutoff.java" />
+    <Content Include="Operators\natural\UniformCrossover.java" />
+    <Content Include="Operators\permutation\InversionMutation.java" />
+    <Content Include="Operators\permutation\PMXCrossover.java" />
+    <Content Include="Operators\permutation\TranspositionMutation.java" />
+    <Content Include="Operators\PopulationStatistics.java" />
+    <Content Include="Operators\real\DifferentialEvolution.java" />
+    <Content Include="Operators\reporters\BestIndividualAndBasicStats.java" />
+    <Content Include="Operators\reporters\Interpretation.java" />
+    <Content Include="Population.java" />
+    <Content Include="PopulationEvaluator.java" />
+    <Content Include="SingleThreadedEvaluator.java" />
+    <Content Include="TerminationCondition.java" />
+    <Content Include="Utils\ClockUtilities.java" />
+    <Content Include="Utils\JavaRandom.java" />
+    <Content Include="Utils\ListUtils.java" />
+    <Content Include="Utils\LruMap.java" />
+    <Content Include="Utils\SystemClock.java" />
+    <Content Include="Utils\WevoClock.java" />
+    <Content Include="Utils\WevoRandom.java" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
