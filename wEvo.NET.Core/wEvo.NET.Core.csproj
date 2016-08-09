@@ -30,6 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CSharpTest.Net.Collections, Version=14.906.1403.1082, Culture=neutral, PublicKeyToken=06aee00cce822474, processorArchitecture=MSIL">
+      <HintPath>packages\CSharpTest.Net.Collections.14.906.1403.1082\lib\net40\CSharpTest.Net.Collections.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -40,40 +44,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CachedObjectiveFunction.cs" />
+    <Compile Include="Exitcriteria\IndividualHasntImproved.cs" />
+    <Compile Include="Exitcriteria\MaxIterations.cs" />
+    <Compile Include="Factory.cs" />
+    <Compile Include="Individuals\BinaryVector.cs" />
+    <Compile Include="Individuals\Individual.cs" />
+    <Compile Include="Individuals\NaturalVector.cs" />
+    <Compile Include="Individuals\Permutation.cs" />
+    <Compile Include="Individuals\RealVector.cs" />
+    <Compile Include="MultiThreadedEvaluator.cs" />
+    <Compile Include="ObjectiveFunction.cs" />
+    <Compile Include="Operator.cs" />
+    <Compile Include="Population.cs" />
+    <Compile Include="PopulationEvaluator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SingleThreadedEvaluator.cs" />
+    <Compile Include="TerminationCondition.cs" />
+    <Compile Include="Utils\Arrays.cs" />
+    <Compile Include="Utils\ClockUtilities.cs" />
+    <Compile Include="Utils\dotNetRandom.cs" />
+    <Compile Include="Utils\LruMap.cs" />
+    <Compile Include="Utils\WevoClock.cs" />
+    <Compile Include="Utils\WevoRandom.cs" />
+    <Compile Include="Utils\SystemClock.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Algorithm.java" />
     <Content Include="CachedObjectiveFunction.java" />
-    <Content Include="Distribution\master\DistributedPopulation.java" />
-    <Content Include="Distribution\master\DistributedPopulationBuilder.java" />
-    <Content Include="Distribution\master\MasterSlaveEvaluator.java" />
-    <Content Include="Distribution\master\PopulationDistributor.java" />
-    <Content Include="Distribution\master\servlets\DistributionServlet.java" />
-    <Content Include="Distribution\master\servlets\RegistrationServlet.java" />
-    <Content Include="Distribution\master\servlets\StatisticsServlet.java" />
-    <Content Include="Distribution\master\SlaveIdGenerator.java" />
-    <Content Include="Distribution\master\SlaveInformation.java" />
-    <Content Include="Distribution\master\SlaveManager.java" />
-    <Content Include="Distribution\master\StatisticsManager.java" />
-    <Content Include="Distribution\master\statistics\IterationStatistics.java" />
-    <Content Include="Distribution\master\statistics\SlaveStatistics.java" />
-    <Content Include="Distribution\master\statistics\Statistics.java" />
-    <Content Include="Distribution\master\statistics\StatisticsHtmlPrinter.java" />
-    <Content Include="Distribution\master\statistics\TaskStatistics.java" />
-    <Content Include="Distribution\master\TaskManager.java" />
-    <Content Include="Distribution\master\UniformDistributor.java" />
-    <Content Include="Distribution\serialization\EvaluationResult.java" />
-    <Content Include="Distribution\serialization\EvaluationResultBuilder.java" />
-    <Content Include="Distribution\serialization\EvaluationTask.java" />
-    <Content Include="Distribution\serialization\JavaIOResultSerializer.java" />
-    <Content Include="Distribution\serialization\JavaIOTaskSerializer.java" />
-    <Content Include="Distribution\serialization\ResultSerializer.java" />
-    <Content Include="Distribution\serialization\TaskSerializer.java" />
-    <Content Include="Distribution\slave\Slave.java" />
-    <Content Include="Distribution\slave\SlaveRegistrator.java" />
-    <Content Include="Distribution\slave\TaskExchanger.java" />
-    <Content Include="Distribution\utils\WevoURL.java" />
     <Content Include="Exitcriteria\IndividualHasntImproved.java" />
     <Content Include="Exitcriteria\MaxIterations.java" />
     <Content Include="Factory.java" />
@@ -86,19 +84,19 @@
     <Content Include="Operator.java" />
     <Content Include="Operators\AddHardcodedIndividual.java" />
     <Content Include="Operators\BestFractionSelection.java" />
-    <Content Include="Operators\binary\UniformCrossover.java" />
-    <Content Include="Operators\binary\UniformProbabilityNegationMutation.java" />
+    <Content Include="Operators\Binary\UniformCrossover.java" />
+    <Content Include="Operators\Binary\UniformProbabilityNegationMutation.java" />
     <Content Include="Operators\CombineBestWithOtherOperator.java" />
-    <Content Include="Operators\natural\GaussianAdditionMutation.java" />
-    <Content Include="Operators\natural\IntervalCutoff.java" />
-    <Content Include="Operators\natural\UniformCrossover.java" />
-    <Content Include="Operators\permutation\InversionMutation.java" />
-    <Content Include="Operators\permutation\PMXCrossover.java" />
-    <Content Include="Operators\permutation\TranspositionMutation.java" />
+    <Content Include="Operators\Natural\GaussianAdditionMutation.java" />
+    <Content Include="Operators\Natural\IntervalCutoff.java" />
+    <Content Include="Operators\Natural\UniformCrossover.java" />
+    <Content Include="Operators\Permutation\InversionMutation.java" />
+    <Content Include="Operators\Permutation\PMXCrossover.java" />
+    <Content Include="Operators\Permutation\TranspositionMutation.java" />
     <Content Include="Operators\PopulationStatistics.java" />
-    <Content Include="Operators\real\DifferentialEvolution.java" />
-    <Content Include="Operators\reporters\BestIndividualAndBasicStats.java" />
-    <Content Include="Operators\reporters\Interpretation.java" />
+    <Content Include="Operators\Real\DifferentialEvolution.java" />
+    <Content Include="Operators\Reporters\BestIndividualAndBasicStats.java" />
+    <Content Include="Operators\Reporters\Interpretation.java" />
     <Content Include="Population.java" />
     <Content Include="PopulationEvaluator.java" />
     <Content Include="SingleThreadedEvaluator.java" />
@@ -110,6 +108,9 @@
     <Content Include="Utils\SystemClock.java" />
     <Content Include="Utils\WevoClock.java" />
     <Content Include="Utils\WevoRandom.java" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
