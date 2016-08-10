@@ -61,6 +61,7 @@
     <Compile Include="Utils\Arrays.cs" />
     <Compile Include="Utils\ClockUtilities.cs" />
     <Compile Include="Utils\dotNetRandom.cs" />
+    <Compile Include="Utils\LimitedConcurrencyLevelTaskScheduler.cs" />
     <Compile Include="Utils\ListUtils.cs" />
     <Compile Include="Utils\LruMap.cs" />
     <Compile Include="Utils\WevoClock.cs" />

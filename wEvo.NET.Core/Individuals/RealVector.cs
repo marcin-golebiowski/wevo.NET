@@ -36,7 +36,7 @@ namespace wEvo.NET.Core.Individuals
          * @param i Which value to set.
          * @param value What it set to.
          */
-        public void setValue(int i, double value)
+        public void SetValue(int i, double value)
         {
             values[i] = value;
         }
@@ -75,7 +75,7 @@ namespace wEvo.NET.Core.Individuals
             return Arrays<double>.EqualsArray(this.values, that.values);
         }
 
-        public  override String ToString()
+        public override String ToString()
         {
             StringBuilder sb = new StringBuilder();
             sb.Append("<");
