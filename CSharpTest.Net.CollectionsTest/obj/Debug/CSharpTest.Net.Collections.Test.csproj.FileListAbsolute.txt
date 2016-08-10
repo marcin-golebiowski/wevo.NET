@@ -1,0 +1,10 @@
+C:\Dev\Source\wevo.net\wevo.NET\CSharpTest.Net.CollectionsTest\obj\Debug\CSharpTest.Net.Collections.Test.csprojResolveAssemblyReference.cache
+C:\Dev\Source\wevo.net\wevo.NET\CSharpTest.Net.CollectionsTest\bin\CSharpTest.Net.Collections.Test.dll
+C:\Dev\Source\wevo.net\wevo.NET\CSharpTest.Net.CollectionsTest\bin\CSharpTest.Net.Collections.Test.pdb
+C:\Dev\Source\wevo.net\wevo.NET\CSharpTest.Net.CollectionsTest\bin\CSharpTest.Net.Collections.dll
+C:\Dev\Source\wevo.net\wevo.NET\CSharpTest.Net.CollectionsTest\bin\nunit.framework.dll
+C:\Dev\Source\wevo.net\wevo.NET\CSharpTest.Net.CollectionsTest\bin\CSharpTest.Net.Collections.pdb
+C:\Dev\Source\wevo.net\wevo.NET\CSharpTest.Net.CollectionsTest\bin\CSharpTest.Net.Collections.xml
+C:\Dev\Source\wevo.net\wevo.NET\CSharpTest.Net.CollectionsTest\bin\nunit.framework.xml
+C:\Dev\Source\wevo.net\wevo.NET\CSharpTest.Net.CollectionsTest\obj\Debug\CSharpTest.Net.Collections.Test.dll
+C:\Dev\Source\wevo.net\wevo.NET\CSharpTest.Net.CollectionsTest\obj\Debug\CSharpTest.Net.Collections.Test.pdb

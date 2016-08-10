@@ -71,7 +71,7 @@ namespace wEvo.NET.Core.Individuals
         /** {@inheritDoc} */
         public override int GetHashCode()
         {
-            return Arrays.GetHashCode(values);
+            return Arrays<long>.GetHashCode(values);
         }
 
         /** {@inheritDoc} */
@@ -82,7 +82,7 @@ namespace wEvo.NET.Core.Individuals
             }
 
             NaturalVector that = (NaturalVector)obj;
-            return Arrays.EqualsArray(this.values, that.values);
+            return Arrays<long>.EqualsArray(this.values, that.values);
         }
 
         public override String ToString()

@@ -62,7 +62,7 @@ namespace wEvo.NET.Core.Individuals
         
         public override int GetHashCode()
         {
-            return Arrays.GetHashCode(values);
+            return Arrays<double>.GetHashCode(values);
         }
 
         public override bool Equals(Object obj)
@@ -72,7 +72,7 @@ namespace wEvo.NET.Core.Individuals
             }
 
             RealVector that = (RealVector)obj;
-            return Arrays.EqualsArray(this.values, that.values);
+            return Arrays<double>.EqualsArray(this.values, that.values);
         }
 
         public  override String ToString()

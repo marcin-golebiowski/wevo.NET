@@ -65,7 +65,7 @@ namespace wEvo.NET.Core.Individuals
          * Returns size of the individual.
          * @return Size of the individual.
          */
-        public int getSize()
+        public int GetSize()
         {
             return bits.Length;
         }
@@ -74,7 +74,7 @@ namespace wEvo.NET.Core.Individuals
 
         public override int GetHashCode()
         {
-            return Arrays.GetHashCode(bits);
+            return Arrays<bool>.GetHashCode(bits);
         }
 
         public override bool Equals(Object obj)
@@ -85,7 +85,7 @@ namespace wEvo.NET.Core.Individuals
             }
 
             BinaryVector that = (BinaryVector)obj;
-            return Arrays.EqualsArray(this.bits, that.bits);
+            return Arrays<bool>.EqualsArray(this.bits, that.bits);
         }
 
         public override String ToString()
@@ -104,7 +104,7 @@ namespace wEvo.NET.Core.Individuals
          * @param individualLength Size of the individual.
          * @return Binary individual of given length.
          */
-        public static BinaryVector generate(WevoRandom generator, int individualLength)
+        public static BinaryVector Generate(WevoRandom generator, int individualLength)
         {
             bool[] chromosome = new bool[individualLength];
             for (int j = 0; j < chromosome.Length; j++)
@@ -127,7 +127,7 @@ namespace wEvo.NET.Core.Individuals
             List<BinaryVector> result = new List<BinaryVector>();
             for (int i = 0; i < individuals; i++)
             {
-                result.Add(BinaryVector.generate(generator, individualLength));
+                result.Add(BinaryVector.Generate(generator, individualLength));
             }
             return new Population<BinaryVector>(result);
         }

@@ -18,7 +18,7 @@ namespace wEvo.NET.Core
          * Creates multi-threaded evaluator.
          * @param objectiveFunctions List of objective functions to be evaluated.
          */
-        public MultiThreadedEvaluator(List<CachedObjectiveFunction<T>> objectiveFunctions)
+        public MultiThreadedEvaluator(List<CachedObjectiveFunction<T>> objectiveFunctions) : base(objectiveFunctions)
         {
         }
 

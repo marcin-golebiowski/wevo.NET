@@ -91,7 +91,7 @@ namespace wEvo.NET.Core
                 return false;
             }
 
-            Population<T> that = castToPopulation(obj);
+            Population<T> that = CastToPopulation(obj);
             return this.individuals.Equals(that.individuals);
         }
 
@@ -139,12 +139,12 @@ namespace wEvo.NET.Core
 
             // We pick an individual from the list and append it
             // to the end of new list containing reordered individuals.
-            for (int i = population.size(); i > 0; i--)
+            for (int i = population.Size(); i > 0; i--)
             {
-                int pickedIndividualIndex = random.nextInt(0, i);
-                T pickedIndividual = originalIndividuals.get(pickedIndividualIndex);
-                originalIndividuals.remove(pickedIndividualIndex);
-                reorderedIndividuals.add(pickedIndividual);
+                int pickedIndividualIndex = random.NextInt(0, i);
+                T pickedIndividual = originalIndividuals[pickedIndividualIndex];
+                originalIndividuals.RemoveAt(pickedIndividualIndex);
+                reorderedIndividuals.Add(pickedIndividual);
             }
 
             return new Population<T>(reorderedIndividuals);

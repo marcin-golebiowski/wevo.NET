@@ -1,0 +1,10 @@
+C:\Dev\Source\wevo.net\wevo.NET\CSharpTest.Net.BPlusTreeTest\bin\CSharpTest.Net.BPlusTree.Test.dll
+C:\Dev\Source\wevo.net\wevo.NET\CSharpTest.Net.BPlusTreeTest\bin\CSharpTest.Net.BPlusTree.Test.pdb
+C:\Dev\Source\wevo.net\wevo.NET\CSharpTest.Net.BPlusTreeTest\bin\CSharpTest.Net.Collections.dll
+C:\Dev\Source\wevo.net\wevo.NET\CSharpTest.Net.BPlusTreeTest\bin\nunit.framework.dll
+C:\Dev\Source\wevo.net\wevo.NET\CSharpTest.Net.BPlusTreeTest\bin\CSharpTest.Net.Collections.pdb
+C:\Dev\Source\wevo.net\wevo.NET\CSharpTest.Net.BPlusTreeTest\bin\CSharpTest.Net.Collections.xml
+C:\Dev\Source\wevo.net\wevo.NET\CSharpTest.Net.BPlusTreeTest\bin\nunit.framework.xml
+C:\Dev\Source\wevo.net\wevo.NET\CSharpTest.Net.BPlusTreeTest\obj\Debug\CSharpTest.Net.BPlusTree.Test.csprojResolveAssemblyReference.cache
+C:\Dev\Source\wevo.net\wevo.NET\CSharpTest.Net.BPlusTreeTest\obj\Debug\CSharpTest.Net.BPlusTree.Test.dll
+C:\Dev\Source\wevo.net\wevo.NET\CSharpTest.Net.BPlusTreeTest\obj\Debug\CSharpTest.Net.BPlusTree.Test.pdb
