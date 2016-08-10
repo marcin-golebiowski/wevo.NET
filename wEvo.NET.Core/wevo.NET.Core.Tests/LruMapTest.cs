@@ -20,14 +20,21 @@ namespace wevo.NET.Core.Tests
 
             m.Add("c", 3);
 
-            try
-            {
-                m.Get("a");
-                Assert.Fail();
-            }
-            catch
-            {
-            }
+            Assert.IsFalse(m.ContainsKey("a"));
+        }
+
+        [TestMethod]
+        public void TestAddingObjects()
+        {
+            // Magic Number off
+            LruMap<string, int> map = new LruMap<string, int>(3);
+            map.Add("a", 1);
+            map.Add("B", 2);
+            map.Add("c", 3);
+            map.Add("d", 4);
+            // Magic Number on
+            Assert.IsTrue(map.ContainsKey("c"));
+            Assert.IsFalse(map.ContainsKey("a"));
         }
     }
 }
