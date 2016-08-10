@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Algorithm.cs" />
     <Compile Include="CachedObjectiveFunction.cs" />
     <Compile Include="Exitcriteria\IndividualHasntImproved.cs" />
     <Compile Include="Exitcriteria\MaxIterations.cs" />
