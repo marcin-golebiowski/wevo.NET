@@ -5,7 +5,12 @@ using wEvo.NET.Core.Utils;
 
 namespace wEvo.NET.Core.Individuals
 {
-    class BinaryVector : Individual
+    /**
+    * Vector of binary numbers.
+    *
+    * @author Marcin Brodziak (marcin@nierobcietegowdomu.pl)
+    */
+    public class BinaryVector : Individual
     {
         /** Binary values in the vector. */
         private bool[] bits;

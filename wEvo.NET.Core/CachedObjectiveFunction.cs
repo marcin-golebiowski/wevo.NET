@@ -1,12 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using wEvo.NET.Core.Utils;
 
 namespace wEvo.NET.Core
 {
+    /**
+    * Wrapper for an objective function that caches the result of computation.
+    * @author Marcin Brodziak (marcin@nierobcietegowdomu.pl)
+    *
+    * @param <T> Type of the individual being evaluated.
+    */
     public class CachedObjectiveFunction<T> where T : Individuals.Individual
     {
         /** Parent objective function that will be cached. */

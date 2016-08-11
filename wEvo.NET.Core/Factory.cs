@@ -1,11 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace wEvo.NET.Core
+﻿namespace wEvo.NET.Core
 {
+    /**
+    * An interface for generic factory, used for example in
+    * {@link AddHardcodedIndividual} operator.
+    * 
+    * @author Marcin Brodziak (marcin.brodziak@gmail.com)
+    * @param <T> type of objects the factory provides.
+    */
     public interface Factory<T>
     {
         /**

@@ -2,6 +2,12 @@
 
 namespace wEvo.NET.Core.Utils
 {
+
+    /**
+    * Class for gathering clock utilities.
+    * @author Karol Stosiek (karol.stosiek@gmail.com)
+    * @author Michal Anglart (anglart.michal@gmail.com)
+    */
     class ClockUtilities
     {
         /**

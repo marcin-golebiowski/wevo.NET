@@ -1,13 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using wEvo.NET.Core;
 using wEvo.NET.Core.Utils;
 
 namespace wEvo.NET.Core
 {
+    /**
+    * Represents the population on which {@link Algorithm} works.
+    * @author Marcin Brodziak (marcin@nierobcietegowdomu.pl)
+    *
+    * @param <T> Type of the individual that this population contains.
+    */
     public class Population<T> where T : Individuals.Individual
     {
         /** List of individuals in the population. */

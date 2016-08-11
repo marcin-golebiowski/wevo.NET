@@ -2,6 +2,11 @@
 
 namespace wEvo.NET.Core.Utils
 {
+    /**
+    * Interface for random number generators.
+    * @author Karol Stosiek (karol.stosiek@gmail.com)
+    * @author Michal Anglart (anglart.michal@gmail.com)
+    */
     public interface WevoRandom
     {
         /**

@@ -2,6 +2,15 @@
 
 namespace wEvo.NET.Core
 {
+    /**
+    * Evaluator that computes values of objective functions for given population.
+    * It is implemented as an operator so that it can be easily added at any step
+    * in the algorithm.
+    *
+    * @author Marcin Brodziak (marcin.brodziak@gmail.com)
+    *
+    * @param <T> Type of individuals being evaluated.
+    */
     public abstract class PopulationEvaluator<T> : Operator<T> where T : Individuals.Individual
     {
        /**

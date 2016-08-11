@@ -5,7 +5,12 @@ using wEvo.NET.Core.Utils;
 
 namespace wEvo.NET.Core.Individuals
 {
-    class RealVector : Individual
+    /**
+    * Vector of real numbers.
+    * 
+    * @author Marcin Brodziak (marcin@nierobcietegowdomu.pl)
+    */
+    public class RealVector : Individual
     {
         /** Binary values in the vector. */
         private double[] values;

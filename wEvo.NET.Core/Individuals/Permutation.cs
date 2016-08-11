@@ -4,7 +4,12 @@ using wEvo.NET.Core.Utils;
 
 namespace wEvo.NET.Core.Individuals
 {
-    class Permutation : Individual
+    /**
+    * Individual representing permutation.
+    * @author Karol Stosiek (karol.stosiek@gmail.com)
+    * @author Michal Anglart (michal.anglart@gmail.com)
+    */
+    public class Permutation : Individual
     {
         /** Chromosome of the individual. */
         private int[] values;

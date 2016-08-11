@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace wEvo.NET.Core
+﻿namespace wEvo.NET.Core
 {
+    /**
+    * Generic interface for a single-criteria objective function.
+    * @author Marcin Brodziak (marcin@nierobcietegowdomu.pl)
+    *
+    * @param <T> Type of the individual being evaluated.
+    */
     public interface ObjectiveFunction<T> where T : Individuals.Individual
     {
         /**

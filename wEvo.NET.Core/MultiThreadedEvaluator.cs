@@ -5,6 +5,13 @@ using wEvo.NET.Core.Utils;
 
 namespace wEvo.NET.Core
 {
+    /**
+    * Implements multi-threaded evaluator. By far this is the one you should be 
+    * using if you are writing a software for a single, but multi-core machine. 
+    * 
+    * @author Marcin Brodziak (marcin.brodziak@gmail.com)
+    * @param <T> Type of individuals to be evaluated.
+    */
     public class MultiThreadedEvaluator<T> : PopulationEvaluator<T> where T : Individuals.Individual
     {
         /** Timeout for waiting for executors to compute tasks. */

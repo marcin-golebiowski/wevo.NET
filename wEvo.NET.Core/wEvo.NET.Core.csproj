@@ -53,6 +53,9 @@
     <Compile Include="MultiThreadedEvaluator.cs" />
     <Compile Include="ObjectiveFunction.cs" />
     <Compile Include="Operator.cs" />
+    <Compile Include="Operators\Binary\UniformCrossover.cs" />
+    <Compile Include="Operators\Binary\UniformProbabilityNegationMutation.cs" />
+    <Compile Include="Operators\Natural\GaussianAdditionMutation.cs" />
     <Compile Include="Population.cs" />
     <Compile Include="PopulationEvaluator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

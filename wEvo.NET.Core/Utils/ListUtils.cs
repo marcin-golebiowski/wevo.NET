@@ -3,6 +3,10 @@ using System.Collections.Generic;
 
 namespace wEvo.NET.Core.Utils
 {
+    /**
+    * Common utilities for managing lists.
+    * @author Marcin Brodziak (marcin.brodziak@gmail.com)
+    */
     public class ListUtils
     {
         /**

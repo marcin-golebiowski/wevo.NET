@@ -4,7 +4,12 @@ using wEvo.NET.Core.Utils;
 
 namespace wEvo.NET.Core.Individuals
 {
-    class NaturalVector : Individual
+    /**
+    * Vector of natural numbers.
+    * 
+    * @author Marcin Brodziak (marcin@nierobcietegowdomu.pl)
+    */
+    public class NaturalVector : Individual
     {
         /** Long values in the vector. */
         private long[] values;

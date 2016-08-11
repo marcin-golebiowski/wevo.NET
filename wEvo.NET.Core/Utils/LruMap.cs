@@ -3,6 +3,12 @@ using CSharpTest.Net.Collections;
 
 namespace wEvo.NET.Core.Utils
 {
+    /**
+    * Cache of least recently used objects.
+    * @author Marcin Brodziak (marcin.brodziak@gmail.com)
+    * @param <T> Type of individuals we map from. 
+    * @param <V> Type of individuals we map to.
+    */
     public class LruMap<T, V> : LurchTable<T, V>
     {
         public LruMap(int size) : base(LurchTableOrder.Access, size)

@@ -1,12 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace wEvo.NET.Core
 {
-    class Algorithm<T> where T : Individuals.Individual
+    /**
+    * Encapsulates the list of operators, evaluators, termination conditions, etc.
+    * @author Marcin Brodziak (marcin@nierobcietegowdomu.pl)
+    *
+    * @param <T> Type of the individuals to be evolved.
+    */
+    public class Algorithm<T> where T : Individuals.Individual
     {
        
         /** Has the algorithm finished. */
