@@ -53,9 +53,16 @@
     <Compile Include="MultiThreadedEvaluator.cs" />
     <Compile Include="ObjectiveFunction.cs" />
     <Compile Include="Operator.cs" />
+    <Compile Include="Operators\AddHardcodedIndividual.cs" />
+    <Compile Include="Operators\BestFractionSelection.cs" />
     <Compile Include="Operators\Binary\UniformCrossover.cs" />
     <Compile Include="Operators\Binary\UniformProbabilityNegationMutation.cs" />
     <Compile Include="Operators\Natural\GaussianAdditionMutation.cs" />
+    <Compile Include="Operators\Natural\IntervalCutoff.cs" />
+    <Compile Include="Operators\Natural\UniformCrossover.cs" />
+    <Compile Include="Operators\PopulationStatistics.cs" />
+    <Compile Include="Operators\Real\DifferentialEvolution.cs" />
+    <Compile Include="Operators\Reporters\Interpretation.cs" />
     <Compile Include="Population.cs" />
     <Compile Include="PopulationEvaluator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
