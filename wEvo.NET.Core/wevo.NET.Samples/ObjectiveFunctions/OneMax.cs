@@ -13,7 +13,28 @@ namespace wevo.NET.Samples.ObjectiveFunctions
             {
                 if (individual.GetBit(i))
                 {
-                    result += 1;
+                    if (i % 2 == 0)
+                    {
+                        result += 1;
+                    }
+                    else
+                    {
+                        result -= 1;
+
+                    }
+
+                }
+                else
+                {
+                    if (i % 2 == 1)
+                    {
+                        result += 1;
+                    }
+                    else
+                    {
+                        result -= 1;
+
+                    }
                 }
             }
             return result;

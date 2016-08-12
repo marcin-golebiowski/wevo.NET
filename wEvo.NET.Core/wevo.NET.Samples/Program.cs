@@ -18,17 +18,18 @@ namespace wevo.NET.Samples
         static void Main(string[] args)
         {
             int populationSize = 10;
-            int len = 10;
+            int len = 100;
+            int iterations = 100;
             var function = new OneMax();
-
             var initialPopulation = BinaryVector.GeneratePopulationOfRandomBinaryIndividuals(new dotNetRandom(), len, populationSize);
+
             Algorithm<BinaryVector> alg = new Algorithm<BinaryVector>(initialPopulation);
 
             var functions = new List<CachedObjectiveFunction<BinaryVector>>();
             functions.Add(new CachedObjectiveFunction<BinaryVector>(function, 100));
 
             alg.AddEvaluationPoint(new SingleThreadedEvaluator<BinaryVector>(functions));
-            alg.AddExitPoint(new MaxIterations<BinaryVector>(2));
+            alg.AddExitPoint(new MaxIterations<BinaryVector>(iterations));
 
             alg.AddOperator(new BestFractionSelection<BinaryVector>(new OneMax(), 0.2));
             alg.AddOperator(new Core.Operators.Binary.UniformCrossover(new dotNetRandom()));
