@@ -1,5 +1,11 @@
 ﻿namespace wEvo.NET.Core.Exitcriteria
 {
+    /**
+    * Terminates the evolution after given number of iterations has passed.
+    * @author Marcin Brodziak (marcin@nierobcietegowdomu.pl)
+    *
+    * @param <T> Type of the individual for which it is evaluated.
+    */
     public class MaxIterations<T> : TerminationCondition<T> where T : Individuals.Individual
     {
 

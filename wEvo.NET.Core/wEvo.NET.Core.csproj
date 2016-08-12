@@ -57,9 +57,12 @@
     <Compile Include="Operators\BestFractionSelection.cs" />
     <Compile Include="Operators\Binary\UniformCrossover.cs" />
     <Compile Include="Operators\Binary\UniformProbabilityNegationMutation.cs" />
+    <Compile Include="Operators\CombineBestWithOtherOperator.cs" />
     <Compile Include="Operators\Natural\GaussianAdditionMutation.cs" />
     <Compile Include="Operators\Natural\IntervalCutoff.cs" />
     <Compile Include="Operators\Natural\UniformCrossover.cs" />
+    <Compile Include="Operators\Permutation\InversionMutation.cs" />
+    <Compile Include="Operators\Permutation\TranspositionMutation.cs" />
     <Compile Include="Operators\PopulationStatistics.cs" />
     <Compile Include="Operators\Real\DifferentialEvolution.cs" />
     <Compile Include="Operators\Reporters\Interpretation.cs" />

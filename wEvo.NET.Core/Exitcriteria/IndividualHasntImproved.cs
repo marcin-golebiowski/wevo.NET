@@ -1,13 +1,13 @@
 ﻿namespace wEvo.NET.Core.Exitcriteria
 {
     /**
-  * Terminates the evolution after for given number of iterations the
-  * individual hasn't changed.
-  * 
-  * @author Marcin Brodziak (marcin@nierobcietegowdomu.pl)
-  *
-  * @param <T> Type of the individual for which it is evaluated.
-  */
+    * Terminates the evolution after for given number of iterations the
+    * individual hasn't changed.
+    *  
+    * @author Marcin Brodziak (marcin@nierobcietegowdomu.pl)
+    *
+    * @param <T> Type of the individual for which it is evaluated.
+    */
     public class IndividualHasntImproved<T> : TerminationCondition<T> where T : Individuals.Individual
     {
         /** Number of iterations the individual is allowed to not change. */
