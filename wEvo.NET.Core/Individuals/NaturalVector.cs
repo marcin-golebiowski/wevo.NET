@@ -44,11 +44,7 @@ namespace wevo.NET.Core.Individuals
          */
         public NaturalVector(long[] list)
         {
-            values = new long[list.Length];
-            for (int i = 0; i < list.Length; i++)
-            {
-                values[i] = list[i];
-            }
+            values = Arrays<long>.Clone(list);
         }
 
         /**
@@ -129,6 +125,12 @@ namespace wevo.NET.Core.Individuals
         public long[] GetValues()
         {
             return values;
+        }
+
+        public override Individual Clone()
+        {
+            NaturalVector clone = new NaturalVector(this.values);
+            return clone;
         }
     }
 }

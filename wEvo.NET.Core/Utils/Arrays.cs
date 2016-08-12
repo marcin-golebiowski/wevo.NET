@@ -23,6 +23,18 @@ namespace wevo.NET.Core.Utils
     {
         private static readonly EqualityComparer<T> elementComparer = EqualityComparer<T>.Default;
 
+        public static T[] Clone(T[] array)
+        {
+            T[] clone = new T[array.Length];
+
+            for (int i = 0; i < array.Length; i++)
+            {
+                clone[i] = array[i];
+            }
+
+            return clone;
+        }
+
         public static bool EqualsArray(T[] first, T[] second)
         {
             if (first == second)

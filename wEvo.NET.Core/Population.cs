@@ -47,6 +47,21 @@ namespace wevo.NET.Core
             individuals = new List<T>();
         }
 
+
+        /**
+        * Copying constructor.
+        * @param population Population to copy.
+        */
+        public Population(Population<T> population)
+        {
+            this.individuals = new List<T>();
+
+            foreach (Individuals.Individual ind in population.individuals)
+            {
+                this.individuals.Add((T)ind.Clone());
+            }
+        }
+
         /**
          * Returns individuals in the population.
          * @return List of individuals in the population.

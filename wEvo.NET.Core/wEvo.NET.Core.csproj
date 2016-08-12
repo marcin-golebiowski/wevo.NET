@@ -62,6 +62,7 @@
     <Compile Include="Operators\Natural\IntervalCutoff.cs" />
     <Compile Include="Operators\Natural\UniformCrossover.cs" />
     <Compile Include="Operators\Permutation\InversionMutation.cs" />
+    <Compile Include="Operators\Permutation\PMXCrossover.cs" />
     <Compile Include="Operators\Permutation\TranspositionMutation.cs" />
     <Compile Include="Operators\PopulationStatistics.cs" />
     <Compile Include="Operators\Real\DifferentialEvolution.cs" />

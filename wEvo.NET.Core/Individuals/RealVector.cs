@@ -44,11 +44,7 @@ namespace wevo.NET.Core.Individuals
          */
         public RealVector(double[] list)
         {
-            values = new double[list.Length];
-            for (int i = 0; i < list.Length; i++)
-            {
-                values[i] = list[i];
-            }
+            values = Arrays<double>.Clone(list);
         }
 
         /**
@@ -169,6 +165,11 @@ namespace wevo.NET.Core.Individuals
                 result.Add(RealVector.Generate(generator, individualLength, lowerLimit, upperLimit));
             }
             return new Population<RealVector>(result);
+        }
+
+        public override Individual Clone()
+        {
+            return new RealVector(this.values);
         }
     }
 }

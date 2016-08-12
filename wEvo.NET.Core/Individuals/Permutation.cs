@@ -45,7 +45,7 @@ namespace wevo.NET.Core.Individuals
 
         public Permutation(int[] genes)
         {
-            this.values = genes;
+            this.values = Arrays<int>.Clone(genes);
         }
 
         /**
@@ -62,7 +62,7 @@ namespace wevo.NET.Core.Individuals
          */
         public int[] GetValues()
         {
-            return this.values;
+            return Arrays<int>.Clone(this.values);
         }
 
         /**
@@ -178,6 +178,11 @@ namespace wevo.NET.Core.Individuals
             }
 
             return new Population<Permutation>(result);
+        }
+
+        public override Individual Clone()
+        {
+            return new Permutation(this.values);
         }
     }
 }

@@ -26,9 +26,6 @@ namespace wevo.NET.Core.Operators.Permutation
     * them by i and j. Assume, that i < j.
     * 2) the sequence x_{i}, x_{i+1}, ..., x_{j} is inverted, i.e. we reverse
     * the sequence and copy it to the exact same place in individual.
-    * 
-    * @author Karol Asgaroth Stosiek (karol.stosiek@gmail.com)
-    * @author Szymon Fogiel (szymek.fogiel@gmail.com)
     */
     public class InversionMutation : Operator<Individuals.Permutation>
     {

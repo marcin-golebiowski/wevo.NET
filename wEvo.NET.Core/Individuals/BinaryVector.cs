@@ -150,6 +150,12 @@ namespace wevo.NET.Core.Individuals
                 result.Add(BinaryVector.Generate(generator, individualLength));
             }
             return new Population<BinaryVector>(result);
-        }       
+        }
+
+        public override Individual Clone()
+        {
+            BinaryVector clone = new BinaryVector(bits);
+            return clone;
+        }
     }
 }
