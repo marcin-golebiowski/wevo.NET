@@ -1,37 +1,68 @@
 ﻿using System;
+using wEvo.NET.Core.Utils.Superbest_random;
 
 namespace wEvo.NET.Core.Utils
 {
-    class dotNetRandom : WevoRandom
+    /**
+    * Standard random number generator based on .NET random number generator.
+    * @author Karol Stosiek (karol.stosiek@gmail.com)
+    * @author Michal Anglart (anglart.michal@gmail.com)
+    */
+    public class dotNetRandom : WevoRandom
     {
+        /** Random number generator. */
+        private Random generator;
+
+        /** Default constructor using current time as seed. */
+        public dotNetRandom() : this(new SystemClock())
+        {
+        }
+
+        /**
+         * Constructor using current time as seed.
+         * @param clock Time measurement utility.
+         */
+        public dotNetRandom(WevoClock clock) : this((int)clock.GetCurrentTimeMillis())
+        {
+        }
+
+        /**
+         * Constructor with seed.
+         * @param seed Seed to the random number generator.
+         */
+        public dotNetRandom(int seed)
+        {
+            this.generator = new Random(seed);
+        }
+
         public Random GetInnerGenerator()
         {
-            throw new NotImplementedException();
+            return generator;
         }
 
         public bool NextBoolean()
         {
-            throw new NotImplementedException();
+            return generator.NextBoolean();
         }
 
         public double NextDouble(double lowerLimit, double upperLimit)
         {
-            throw new NotImplementedException();
+            return generator.NextDouble() * (upperLimit - lowerLimit) + lowerLimit;
         }
 
         public double NextGaussian()
         {
-            throw new NotImplementedException();
+            return generator.NextGaussian();
         }
 
         public int NextInt(int lowerLimit, int upperLimit)
         {
-            throw new NotImplementedException();
+            return generator.Next(lowerLimit, upperLimit);
         }
 
         public long NextLong(long lowerLimit, long upperLimit)
         {
-            throw new NotImplementedException();
+            return generator.Next((int)lowerLimit, (int)upperLimit);
         }
     }
 }
