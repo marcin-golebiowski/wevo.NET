@@ -1,5 +1,5 @@
 /*
- * Wevo2 - Distributed Evolutionary Computation Library.
+ * wevo2 - Distributed Evolutionary Computation Library.
  * Copyright (C) 2009 Marcin Brodziak
  *
  * This library is free software; you can redistribute it and/or
@@ -24,7 +24,7 @@ import java.util.List;
 import engine.ObjectiveFunction;
 import engine.Operator;
 import engine.Population;
-import engine.utils.WevoRandom;
+import engine.utils.wevoRandom;
 
 /**
  * Takes a result of another operator plus the best individual from
@@ -42,7 +42,7 @@ public class CombineBestWithOtherOperator<T> implements Operator<T> {
   private final Operator<T> operator;
 
   /** Random number generator. */
-  private final WevoRandom random;
+  private final wevoRandom random;
 
   /**
    * Creates the operator.
@@ -53,7 +53,7 @@ public class CombineBestWithOtherOperator<T> implements Operator<T> {
   public CombineBestWithOtherOperator(
       final List<? extends ObjectiveFunction<T>> functions, 
       final Operator<T> operator,
-      final WevoRandom random) {
+      final wevoRandom random) {
     this.objectiveFunctions = functions;
     this.operator = operator;
     this.random = random;

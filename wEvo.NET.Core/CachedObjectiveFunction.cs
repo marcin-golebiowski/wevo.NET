@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using wEvo.NET.Core.Utils;
+using wevo.NET.Core.Utils;
 
-namespace wEvo.NET.Core
+namespace wevo.NET.Core
 {
     /**
     * Wrapper for an objective function that caches the result of computation.

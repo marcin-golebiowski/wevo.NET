@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using wEvo.NET.Core.Utils;
+using wevo.NET.Core.Utils;
 
 namespace wevo.NET.Core.Tests
 {

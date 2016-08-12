@@ -1,13 +1,13 @@
 ﻿using System;
 
-namespace wEvo.NET.Core.Utils
+namespace wevo.NET.Core.Utils
 {
     /**
     * Interface for random number generators.
     * @author Karol Stosiek (karol.stosiek@gmail.com)
     * @author Michal Anglart (anglart.michal@gmail.com)
     */
-    public interface WevoRandom
+    public interface wevoRandom
     {
         /**
         * Returns next random long number.

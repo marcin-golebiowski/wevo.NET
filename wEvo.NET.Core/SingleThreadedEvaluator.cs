@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace wEvo.NET.Core
+namespace wevo.NET.Core
 {
     /**
     * A single-threaded evaluator. Iterates in a loop over all individual in 

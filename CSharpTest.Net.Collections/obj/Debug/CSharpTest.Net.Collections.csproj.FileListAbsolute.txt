@@ -5,4 +5,3 @@ C:\Dev\Source\wevo.net\wevo.NET\CSharpTest.Net.Collections\obj\Debug\CSharpTest.
 C:\Dev\Source\wevo.net\wevo.NET\CSharpTest.Net.Collections\obj\Debug\CSharpTest.Net.Collections.csproj.GenerateResource.Cache
 C:\Dev\Source\wevo.net\wevo.NET\CSharpTest.Net.Collections\obj\Debug\CSharpTest.Net.Collections.dll
 C:\Dev\Source\wevo.net\wevo.NET\CSharpTest.Net.Collections\obj\Debug\CSharpTest.Net.Collections.pdb
-C:\Dev\Source\wevo.net\wevo.NET\CSharpTest.Net.Collections\obj\Debug\CSharpTest.Net.Collections.csprojResolveAssemblyReference.cache

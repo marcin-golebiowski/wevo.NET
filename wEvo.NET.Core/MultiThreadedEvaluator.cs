@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using wEvo.NET.Core.Utils;
+using wevo.NET.Core.Utils;
 
-namespace wEvo.NET.Core
+namespace wevo.NET.Core
 {
     /**
     * Implements multi-threaded evaluator. By far this is the one you should be 

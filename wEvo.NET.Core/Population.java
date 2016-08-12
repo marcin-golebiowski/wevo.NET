@@ -1,5 +1,5 @@
 /*
- * Wevo2 - Distributed Evolutionary Computation Library.
+ * wevo2 - Distributed Evolutionary Computation Library.
  * Copyright (C) 2009 Marcin Brodziak
  *
  * This library is free software; you can redistribute it and/or
@@ -25,7 +25,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import engine.utils.WevoRandom;
+import engine.utils.wevoRandom;
 
 /**
  * Represents the population on which {@link Algorithm} works.
@@ -151,7 +151,7 @@ public class Population<T> implements Serializable {
    * @return Shuffled version of the population object.
    */
   public static <T> Population<T> shuffle(
-      final WevoRandom random,
+      final wevoRandom random,
       final Population<T> population) {
     final List<T> reorderedIndividuals = new ArrayList<T>(
         population.size());
@@ -179,7 +179,7 @@ public class Population<T> implements Serializable {
    * @return Population without random individual.
    */
   public static <T> Population<T> removeRandomIndividual(
-      final WevoRandom random,
+      final wevoRandom random,
       final Population<T> population) {
     List<T> newIndividuals = new ArrayList<T>(population.getIndividuals());
     newIndividuals.remove(random.nextInt(0, population.size()));

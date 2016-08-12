@@ -1,5 +1,5 @@
 /*
- * Wevo2 - Distributed Evolutionary Computation Library.
+ * wevo2 - Distributed Evolutionary Computation Library.
  * Copyright (C) 2009 Marcin Brodziak
  *
  * This library is free software; you can redistribute it and/or
@@ -25,7 +25,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 import engine.Population;
-import engine.utils.WevoRandom;
+import engine.utils.wevoRandom;
 
 /**
  * Individual representing permutation.
@@ -144,7 +144,7 @@ public class Permutation implements Serializable {
    * @return Randomly generated permutation individual.
    */
   public static Permutation generate(
-      final WevoRandom generator,
+      final wevoRandom generator,
       final int permutationSize) {
     List<Integer> genesPickPool = new LinkedList<Integer>();
     for (int j = 0; j < permutationSize; j++) {
@@ -170,7 +170,7 @@ public class Permutation implements Serializable {
    * @return Population of permutation individuals.
    */
   public static Population<Permutation> generatePopulationOfRandomIndividuals(
-      final WevoRandom generator,
+      final wevoRandom generator,
       final int individualSize,
       final int individuals) {
     List<Permutation> result = new LinkedList<Permutation>();

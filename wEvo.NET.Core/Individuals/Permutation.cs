@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Text;
-using wEvo.NET.Core.Utils;
+using wevo.NET.Core.Utils;
 
-namespace wEvo.NET.Core.Individuals
+namespace wevo.NET.Core.Individuals
 {
     /**
     * Individual representing permutation.
@@ -124,7 +124,7 @@ namespace wEvo.NET.Core.Individuals
          * @return Randomly generated permutation individual.
          */
         public static Permutation Generate(
-            WevoRandom generator,
+            wevoRandom generator,
             int permutationSize)
         {
             List<int> genesPickPool = new List<int>();
@@ -152,7 +152,7 @@ namespace wEvo.NET.Core.Individuals
          * @return Population of permutation individuals.
          */
         public static Population<Permutation> generatePopulationOfRandomIndividuals(
-            WevoRandom generator,
+            wevoRandom generator,
             int individualSize,
             int individuals)
         {

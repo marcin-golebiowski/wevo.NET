@@ -1,4 +1,4 @@
-﻿namespace wEvo.NET.Core.Operators
+﻿namespace wevo.NET.Core.Operators
 {
     /**
     * Adds a given hardcoded individual to the population.

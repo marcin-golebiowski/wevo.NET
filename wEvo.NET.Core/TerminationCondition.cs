@@ -1,4 +1,4 @@
-﻿namespace wEvo.NET.Core
+﻿namespace wevo.NET.Core
 {
     /**
     * Condition which, when met, signals the {@link Algorithm} to terminate

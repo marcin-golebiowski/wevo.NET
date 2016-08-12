@@ -1,4 +1,4 @@
-﻿namespace wEvo.NET.Core
+﻿namespace wevo.NET.Core
 {
     /**
     * An interface for generic factory, used for example in

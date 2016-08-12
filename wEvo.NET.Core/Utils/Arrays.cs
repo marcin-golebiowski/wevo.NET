@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace wEvo.NET.Core.Utils
+namespace wevo.NET.Core.Utils
 {
     class Arrays<T>
     {

@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using wEvo.NET.Core.Utils;
+using wevo.NET.Core.Operators.Reporters;
+using wevo.NET.Core.Utils;
 
-namespace wEvo.NET.Core.Individuals
+namespace wevo.NET.Core.Individuals
 {
     /**
     * Vector of binary numbers.
@@ -109,7 +110,7 @@ namespace wEvo.NET.Core.Individuals
          * @param individualLength Size of the individual.
          * @return Binary individual of given length.
          */
-        public static BinaryVector Generate(WevoRandom generator, int individualLength)
+        public static BinaryVector Generate(wevoRandom generator, int individualLength)
         {
             bool[] chromosome = new bool[individualLength];
             for (int j = 0; j < chromosome.Length; j++)
@@ -127,7 +128,7 @@ namespace wEvo.NET.Core.Individuals
          * @return List of binary individuals that will form the basis for first
          * iteration of the algorithm.
          */
-        public static Population<BinaryVector> GeneratePopulationOfRandomBinaryIndividuals(WevoRandom generator, int individualLength, int individuals)
+        public static Population<BinaryVector> GeneratePopulationOfRandomBinaryIndividuals(wevoRandom generator, int individualLength, int individuals)
         {
             List<BinaryVector> result = new List<BinaryVector>();
             for (int i = 0; i < individuals; i++)
@@ -135,6 +136,6 @@ namespace wEvo.NET.Core.Individuals
                 result.Add(BinaryVector.Generate(generator, individualLength));
             }
             return new Population<BinaryVector>(result);
-        }
+        }       
     }
 }

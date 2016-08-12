@@ -1,14 +1,14 @@
 ﻿using System;
-using wEvo.NET.Core.Utils.Superbest_random;
+using wevo.NET.Core.Utils.Superbest_random;
 
-namespace wEvo.NET.Core.Utils
+namespace wevo.NET.Core.Utils
 {
     /**
     * Standard random number generator based on .NET random number generator.
     * @author Karol Stosiek (karol.stosiek@gmail.com)
     * @author Michal Anglart (anglart.michal@gmail.com)
     */
-    public class dotNetRandom : WevoRandom
+    public class dotNetRandom : wevoRandom
     {
         /** Random number generator. */
         private Random generator;
@@ -22,7 +22,7 @@ namespace wEvo.NET.Core.Utils
          * Constructor using current time as seed.
          * @param clock Time measurement utility.
          */
-        public dotNetRandom(WevoClock clock) : this((int)clock.GetCurrentTimeMillis())
+        public dotNetRandom(wevoClock clock) : this((int)clock.GetCurrentTimeMillis())
         {
         }
 

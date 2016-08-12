@@ -1,5 +1,5 @@
 /*
- * Wevo2 - Distributed Evolutionary Computation Library.
+ * wevo2 - Distributed Evolutionary Computation Library.
  * Copyright (C) 2009 Marcin Brodziak
  *
  * This library is free software; you can redistribute it and/or
@@ -24,7 +24,7 @@ package engine.utils;
  * @author Karol Stosiek (karol.stosiek@gmail.com)
  * @author Michal Anglart (anglart.michal@gmail.com)
  */
-public class SystemClock implements WevoClock {
+public class SystemClock implements wevoClock {
 
   /** {@inheritDoc} */
   public long getCurrentTimeMillis() {

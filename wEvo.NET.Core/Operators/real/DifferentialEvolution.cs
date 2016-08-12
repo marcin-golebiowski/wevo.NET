@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using wEvo.NET.Core.Individuals;
+using wevo.NET.Core.Individuals;
 
-namespace wEvo.NET.Core.Operators.Real
+namespace wevo.NET.Core.Operators.Real
 {
     /**
     * An operator inspired by differential evolution. Resulting vector is of a form

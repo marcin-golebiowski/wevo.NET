@@ -1,5 +1,5 @@
 /*
- * Wevo2 - Distributed Evolutionary Computation Library.
+ * wevo2 - Distributed Evolutionary Computation Library.
  * Copyright (C) 2009 Marcin Brodziak
  *
  * This library is free software; you can redistribute it and/or
@@ -26,7 +26,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 import engine.Population;
-import engine.utils.WevoRandom;
+import engine.utils.wevoRandom;
 
 /**
  * Vector of binary numbers.
@@ -128,7 +128,7 @@ public class BinaryVector implements Serializable {
    * @return Binary individual of given length.
    */
   public static BinaryVector generate(
-      final WevoRandom generator, 
+      final wevoRandom generator, 
       final int individualLength) {
 
     boolean[] chromosome = new boolean[individualLength];
@@ -148,7 +148,7 @@ public class BinaryVector implements Serializable {
    */
   public static Population<BinaryVector> 
       generatePopulationOfRandomBinaryIndividuals(
-          final WevoRandom generator,
+          final wevoRandom generator,
           final int individualLength,
           final int individuals) {
     List<BinaryVector> result = new LinkedList<BinaryVector>();

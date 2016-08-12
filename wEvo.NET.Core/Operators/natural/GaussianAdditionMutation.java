@@ -1,5 +1,5 @@
 /*
- * Wevo2 - Distributed Evolutionary Computation Library.
+ * wevo2 - Distributed Evolutionary Computation Library.
  * Copyright (C) 2009 Marcin Brodziak
  *
  * This library is free software; you can redistribute it and/or
@@ -25,7 +25,7 @@ import java.util.List;
 import engine.Operator;
 import engine.Population;
 import engine.individuals.NaturalVector;
-import engine.utils.WevoRandom;
+import engine.utils.wevoRandom;
 
 /**
  * For each gene of each individual with given probability a mutation occurs.
@@ -36,7 +36,7 @@ import engine.utils.WevoRandom;
 public class GaussianAdditionMutation implements Operator<NaturalVector> {
  
   /** Random number generator. */
-  private final WevoRandom random;
+  private final wevoRandom random;
  
   /** Sigma in gaussian sampling. */
   private final double sigma;
@@ -56,7 +56,7 @@ public class GaussianAdditionMutation implements Operator<NaturalVector> {
    * @param sigma Standard deviation in gaussian distribution.
    */
   public GaussianAdditionMutation(
-      final WevoRandom random, final double probability, final double sigma) {
+      final wevoRandom random, final double probability, final double sigma) {
     this.random = random;
     this.probability = probability;
     this.sigma = sigma;

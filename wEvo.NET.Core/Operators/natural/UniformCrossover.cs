@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using wEvo.NET.Core.Individuals;
-using wEvo.NET.Core.Utils;
+using wevo.NET.Core.Individuals;
+using wevo.NET.Core.Utils;
 
-namespace wEvo.NET.Core.Operators.Natural
+namespace wevo.NET.Core.Operators.Natural
 {
     /**
     * Performs a crossover of two natural number individuals by
@@ -17,13 +17,13 @@ namespace wEvo.NET.Core.Operators.Natural
         private static double DEFAULT_PROBABILITY = 0.5;
 
         /** RNG. */
-        private WevoRandom random;
+        private wevoRandom random;
 
         /**
          * Creates uniform crossover operator.
          * @param random Random number generator.
          */
-        public UniformCrossover(WevoRandom random)
+        public UniformCrossover(wevoRandom random)
         {
             this.random = random;
         }

@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using wEvo.NET.Core.Utils;
+using wevo.NET.Core.Individuals;
+using wevo.NET.Core.Utils;
 
-namespace wEvo.NET.Core.Operators.Reporters
+namespace wevo.NET.Core.Operators.Reporters
 {
-    class BestIndividualAndBasicStats<T> : Operator<T> where T : Individuals.Individual
+    public class BestIndividualAndBasicStats<T> : Operator<T> where T : Individuals.Individual
     {
         /** Objective function that we're trying to optimize. */
         private List<ObjectiveFunction<T>> objFunction;
@@ -19,7 +20,7 @@ namespace wEvo.NET.Core.Operators.Reporters
         private Interpretation<T> interpretation;
 
         /** Time measurement utility. */
-        private WevoClock clock;
+        private wevoClock clock;
 
         private Logger logger = new Logger();
 
@@ -32,7 +33,7 @@ namespace wEvo.NET.Core.Operators.Reporters
         *    if raw output is enough.
         * @param newClock Time measurement utility.
         */
-        public BestIndividualAndBasicStats(List<ObjectiveFunction<T>> objFunction, Interpretation<T> interpretation, WevoClock newClock)
+        public BestIndividualAndBasicStats(List<ObjectiveFunction<T>> objFunction, Interpretation<T> interpretation, wevoClock newClock)
         {
             this.objFunction = objFunction;
             this.interpretation = interpretation;
@@ -61,17 +62,17 @@ namespace wEvo.NET.Core.Operators.Reporters
 
             T bestIndividual = FindBestIndividualAndComputeSumOfObjFunctionValues(population, meanObjectiveFunctionValues);
 
+            logger.Info("-");
             logger.Info("Iteration " + iterationNumber++);
             logger.Info("Best individual " + Interprete(bestIndividual));
             logger.Info("Population size " + population.Size());
             foreach (ObjectiveFunction<T> o in objFunction)
             {
-                logger.Info("Objective value of " + o + "for best individual is "
-                    + o.Compute(bestIndividual));
-                logger.Info("Mean value for " + o + " is "
-                    + meanObjectiveFunctionValues[o] / population.Size());
+                logger.Info("Objective value of " + o + " for best individual is " + o.Compute(bestIndividual));
+                logger.Info("Mean value for " + o + " is " + meanObjectiveFunctionValues[o] / population.Size());
             }
             UpdateTimer();
+            logger.Info("-");
             return population;
         }
 
@@ -87,7 +88,7 @@ namespace wEvo.NET.Core.Operators.Reporters
             {
                 return bestIndividual.ToString();
             }
-            return interpretation.interprete(bestIndividual);
+            return interpretation.Interprete(bestIndividual);
         }
 
         /**
@@ -115,9 +116,9 @@ namespace wEvo.NET.Core.Operators.Reporters
                         isBetter = false;
                     }
 
-                    Double previousValue;
+                    double previousValue;
 
-                    if (sumOfObjectiveFunctionValues.ContainsKey(function))
+                    if (!sumOfObjectiveFunctionValues.ContainsKey(function))
                     {
                         previousValue = 0.0;
                     }

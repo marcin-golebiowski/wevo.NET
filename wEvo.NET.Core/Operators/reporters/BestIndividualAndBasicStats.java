@@ -1,5 +1,5 @@
 /*
- * Wevo2 - Distributed Evolutionary Computation Library.
+ * wevo2 - Distributed Evolutionary Computation Library.
  * Copyright (C) 2009 Marcin Brodziak
  *
  * This library is free software; you can redistribute it and/or
@@ -27,7 +27,7 @@ import engine.ObjectiveFunction;
 import engine.Operator;
 import engine.Population;
 import engine.utils.SystemClock;
-import engine.utils.WevoClock;
+import engine.utils.wevoClock;
 
 /**
  * Prints out the best individual and some basic statistics, like
@@ -55,7 +55,7 @@ public class BestIndividualAndBasicStats<T> implements Operator<T> {
   private final Interpretation<T> interpretation;
 
   /** Time measurement utility. */
-  private final WevoClock clock;
+  private final wevoClock clock;
  
   /**
    * Creates reporter that reports basic statistics about the population
@@ -70,7 +70,7 @@ public class BestIndividualAndBasicStats<T> implements Operator<T> {
       final List<ObjectiveFunction<T>> objFunction,
       final Logger logger,
       final Interpretation<T> interpretation,
-      final WevoClock newClock) {
+      final wevoClock newClock) {
     this.objFunction = objFunction;
     this.logger = logger;
     this.interpretation = interpretation;

@@ -1,5 +1,5 @@
 /*
- * Wevo2 - Distributed Evolutionary Computation Library.
+ * wevo2 - Distributed Evolutionary Computation Library.
  * Copyright (C) 2009 Marcin Brodziak
  *
  * This library is free software; you can redistribute it and/or
@@ -26,7 +26,7 @@ import java.util.List;
 import engine.Operator;
 import engine.Population;
 import engine.individuals.BinaryVector;
-import engine.utils.WevoRandom;
+import engine.utils.wevoRandom;
 
 /**
  * Performs mutation of the individual by randomly negating one 
@@ -40,7 +40,7 @@ public class UniformProbabilityNegationMutation
   private final double mutationProbability;
  
   /** Random number generator. */
-  private final WevoRandom random;
+  private final wevoRandom random;
 
   /**
    * Returns a mutator, which modifies each bit of the {@link BinaryVector}
@@ -50,7 +50,7 @@ public class UniformProbabilityNegationMutation
    * @param random Random number generator.
    */
   public UniformProbabilityNegationMutation(double mutationProbability,
-        final WevoRandom random) {
+        final wevoRandom random) {
     this.mutationProbability = mutationProbability;
     this.random = random;
   }

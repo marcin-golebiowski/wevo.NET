@@ -1,5 +1,5 @@
 /*
- * Wevo2 - Distributed Evolutionary Computation Library.
+ * wevo2 - Distributed Evolutionary Computation Library.
  * Copyright (C) 2009 Marcin Brodziak
  *
  * This library is free software; you can redistribute it and/or
@@ -26,7 +26,7 @@ import java.util.Random;
  * @author Karol Stosiek (karol.stosiek@gmail.com)
  * @author Michal Anglart (anglart.michal@gmail.com)
  */
-public interface WevoRandom {
+public interface wevoRandom {
 
   /**
    * Returns next random long number.

@@ -1,4 +1,4 @@
-﻿namespace wEvo.NET.Core
+﻿namespace wevo.NET.Core
 {
     /**
     * Generic interface for a single-criteria objective function.

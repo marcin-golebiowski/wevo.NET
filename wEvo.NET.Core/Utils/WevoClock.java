@@ -1,5 +1,5 @@
 /*
- * Wevo2 - Distributed Evolutionary Computation Library.
+ * wevo2 - Distributed Evolutionary Computation Library.
  * Copyright (C) 2009 Marcin Brodziak
  *
  * This library is free software; you can redistribute it and/or
@@ -20,11 +20,11 @@
 package engine.utils;
 
 /**
- * Clock object interface used by WEvo2 library.
+ * Clock object interface used by wevo2 library.
  * @author Karol Stosiek (karol.stosiek@gmail.com)
  * @author Michal Anglart (anglart.michal@gmail.com)
  */
-public interface WevoClock {
+public interface wevoClock {
   /**
    * Returns current time in milliseconds since epoch.
    * @return Current time in milliseconds since epoch.

@@ -1,4 +1,4 @@
-﻿namespace wEvo.NET.Core.Exitcriteria
+﻿namespace wevo.NET.Core.Exitcriteria
 {
     /**
     * Terminates the evolution after for given number of iterations the

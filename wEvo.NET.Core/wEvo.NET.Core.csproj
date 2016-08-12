@@ -67,6 +67,7 @@
     <Compile Include="Operators\Real\DifferentialEvolution.cs" />
     <Compile Include="Operators\Reporters\BestIndividualAndBasicStats.cs" />
     <Compile Include="Operators\Reporters\Interpretation.cs" />
+    <Compile Include="Operators\Reporters\Interpretations\BinaryVectorInterpretation.cs" />
     <Compile Include="Population.cs" />
     <Compile Include="PopulationEvaluator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

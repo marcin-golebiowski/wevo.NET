@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace wEvo.NET.Core.Utils
+namespace wevo.NET.Core.Utils
 {
 
     /**

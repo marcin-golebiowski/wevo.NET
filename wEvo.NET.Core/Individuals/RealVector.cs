@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using wEvo.NET.Core.Utils;
+using wevo.NET.Core.Utils;
 
-namespace wEvo.NET.Core.Individuals
+namespace wevo.NET.Core.Individuals
 {
     /**
     * Vector of real numbers.
@@ -116,7 +116,7 @@ namespace wEvo.NET.Core.Individuals
          * @return Real individual of given length.
          */
         public static RealVector Generate(
-            WevoRandom generator,
+            wevoRandom generator,
             int individualLength,
             int lowerLimit,
             int upperLimit)
@@ -142,7 +142,7 @@ namespace wEvo.NET.Core.Individuals
          * @return Initial population.
          */
         public static Population<RealVector> GeneratePopulationOfRandomRealIndividuals(
-            WevoRandom generator,
+            wevoRandom generator,
             int individualLength,
             int individuals,
             int lowerLimit,

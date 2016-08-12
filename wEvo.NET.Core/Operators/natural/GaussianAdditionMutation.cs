@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using wEvo.NET.Core.Individuals;
-using wEvo.NET.Core.Utils;
+using wevo.NET.Core.Individuals;
+using wevo.NET.Core.Utils;
 
-namespace wEvo.NET.Core.Operators.Natural
+namespace wevo.NET.Core.Operators.Natural
 {
     /**
     * For each gene of each individual with given probability a mutation occurs.
@@ -14,7 +14,7 @@ namespace wEvo.NET.Core.Operators.Natural
     public class GaussianAdditionMutation : Operator<NaturalVector>
     {
         /** Random number generator. */
-        private WevoRandom random;
+        private wevoRandom random;
  
         /** Sigma in gaussian sampling. */
         private double sigma;
@@ -33,7 +33,7 @@ namespace wEvo.NET.Core.Operators.Natural
         *     of each individual.
         * @param sigma Standard deviation in gaussian distribution.
         */
-        public GaussianAdditionMutation(WevoRandom random, double probability, double sigma)
+        public GaussianAdditionMutation(wevoRandom random, double probability, double sigma)
         {
             this.random = random;
             this.probability = probability;

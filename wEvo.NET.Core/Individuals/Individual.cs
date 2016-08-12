@@ -1,4 +1,4 @@
-﻿namespace wEvo.NET.Core.Individuals
+﻿namespace wevo.NET.Core.Individuals
 {
     public abstract class Individual
     {

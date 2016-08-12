@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using wEvo.NET.Core.Individuals;
-using wEvo.NET.Core.Utils;
+using wevo.NET.Core.Individuals;
+using wevo.NET.Core.Utils;
 
-namespace wEvo.NET.Core.Operators.Binary
+namespace wevo.NET.Core.Operators.Binary
 {
     public class UniformProbabilityNegationMutation : Operator<BinaryVector>
     {
@@ -10,7 +10,7 @@ namespace wEvo.NET.Core.Operators.Binary
         private double mutationProbability;
 
         /** Random number generator. */
-        private WevoRandom random;
+        private wevoRandom random;
 
         /**
         * Returns a mutator, which modifies each bit of the {@link BinaryVector}
@@ -19,7 +19,7 @@ namespace wEvo.NET.Core.Operators.Binary
         *     of the individual.
         * @param random Random number generator.
         */
-        public UniformProbabilityNegationMutation(double mutationProbability, WevoRandom random)
+        public UniformProbabilityNegationMutation(double mutationProbability, wevoRandom random)
         {
             this.mutationProbability = mutationProbability;
             this.random = random;

@@ -1,4 +1,4 @@
-﻿namespace wEvo.NET.Core
+﻿namespace wevo.NET.Core
 {
     /**
     * An operator transforming population of individuals into another

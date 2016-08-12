@@ -1,5 +1,5 @@
 /*
- * Wevo2 - Distributed Evolutionary Computation Library.
+ * wevo2 - Distributed Evolutionary Computation Library.
  * Copyright (C) 2009 Marcin Brodziak
  *
  * This library is free software; you can redistribute it and/or
@@ -26,7 +26,7 @@ import java.util.List;
 import engine.Operator;
 import engine.Population;
 import engine.individuals.Permutation;
-import engine.utils.WevoRandom;
+import engine.utils.wevoRandom;
 
 /**
  * PMX crossover. A well-known crossover operator. It creates children by
@@ -60,7 +60,7 @@ public class PMXCrossover implements Operator<Permutation> {
   private int segmentLength;
 
   /** Random number generator. */
-  private WevoRandom randomGenerator;
+  private wevoRandom randomGenerator;
 
   /** Indicates whether operator should generate segment bounds randomly. */
   private boolean generateSegmentBounds;
@@ -73,7 +73,7 @@ public class PMXCrossover implements Operator<Permutation> {
    * @param length the length of the exchanged segment.
    */
   public PMXCrossover(
-      final WevoRandom generator,
+      final wevoRandom generator,
       final int beginning,
       final int length) {
     this.randomGenerator = generator;
@@ -89,7 +89,7 @@ public class PMXCrossover implements Operator<Permutation> {
    * @param generator Random number generator.
    */
   public PMXCrossover(
-      final WevoRandom generator) {
+      final wevoRandom generator) {
     this.randomGenerator = generator;
     this.generateSegmentBounds = true;
   }

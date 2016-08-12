@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using wEvo.NET.Core.Utils;
+using wevo.NET.Core.Utils;
 
-namespace wEvo.NET.Core.Operators
+namespace wevo.NET.Core.Operators
 {
     /**
     * Takes a result of another operator plus the best individual from
@@ -19,7 +19,7 @@ namespace wEvo.NET.Core.Operators
         private Operator<T> op;
 
         /** Random number generator. */
-        private WevoRandom random;
+        private wevoRandom random;
 
         /**
         * Creates the operator.
@@ -27,7 +27,7 @@ namespace wEvo.NET.Core.Operators
         * @param operator  Operator to apply.
         * @param random Random number generator.
         */
-        public CombineBestWithOtherOperator( List<ObjectiveFunction<T>> functions, Operator<T> op, WevoRandom random)
+        public CombineBestWithOtherOperator( List<ObjectiveFunction<T>> functions, Operator<T> op, wevoRandom random)
         {
             this.objectiveFunctions = functions;
             this.op = op;

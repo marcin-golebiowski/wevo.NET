@@ -1,6 +1,6 @@
-﻿using wEvo.NET.Core.Utils;
+﻿using wevo.NET.Core.Utils;
 
-namespace wEvo.NET.Core.Operators.Permutation
+namespace wevo.NET.Core.Operators.Permutation
 {
     /**
     * Class implementing a well-known inversion mutation operator. Mutation that
@@ -19,14 +19,14 @@ namespace wEvo.NET.Core.Operators.Permutation
         private double mutationProbability;
 
         /** Random number generator. */
-        private WevoRandom randomGenerator;
+        private wevoRandom randomGenerator;
 
         /**
          * Constructor.
          * @param generator Random number generator.
          * @param probability Probability of a individual mutation.
          */
-        public InversionMutation(WevoRandom generator, double probability)
+        public InversionMutation(wevoRandom generator, double probability)
         {
             this.randomGenerator = generator;
             this.mutationProbability = probability;

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using wEvo.NET.Core.Utils;
+using wevo.NET.Core.Utils;
 
-namespace wEvo.NET.Core
+namespace wevo.NET.Core
 {
     /**
     * Represents the population on which {@link Algorithm} works.
@@ -29,16 +29,6 @@ namespace wEvo.NET.Core
         public Population()
         {
             individuals = new List<T>();
-        }
-
-        /**
-         * Copying constructor.
-         * @param population Population to copy.
-         */
-        public Population(Population<T> population)
-        {
-            //this.individuals = Arrays.asList((T[])population.individuals.toArray().clone());
-            //TODO ....
         }
 
         /**
@@ -134,11 +124,11 @@ namespace wEvo.NET.Core
          * @return Shuffled version of the population object.
          */
         public static Population<T> Shuffle(
-            WevoRandom random,
+            wevoRandom random,
             Population<T> population)
         {
-            List< T > reorderedIndividuals = new List<T>(population.Size());
-            List< T > originalIndividuals = new List<T>(population.GetIndividuals());
+            List<T> reorderedIndividuals = new List<T>(population.Size());
+            List<T> originalIndividuals = new List<T>(population.GetIndividuals());
 
             // We pick an individual from the list and append it
             // to the end of new list containing reordered individuals.
@@ -162,7 +152,7 @@ namespace wEvo.NET.Core
          * @return Population without random individual.
          */
         public static Population<T> RemoveRandomIndividual(
-            WevoRandom random,
+            wevoRandom random,
             Population<T> population)
         {
             List<T> newIndividuals = new List<T>(population.GetIndividuals());

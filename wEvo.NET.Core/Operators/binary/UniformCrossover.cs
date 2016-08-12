@@ -1,22 +1,22 @@
 ﻿using System.Collections.Generic;
-using wEvo.NET.Core.Individuals;
-using wEvo.NET.Core.Utils;
+using wevo.NET.Core.Individuals;
+using wevo.NET.Core.Utils;
 
-namespace wEvo.NET.Core.Operators.Binary
+namespace wevo.NET.Core.Operators.Binary
 {
-    class UniformCrossover : Operator<BinaryVector>
+    public class UniformCrossover : Operator<BinaryVector>
     {
         /** Head-tail probability. */
         private static double DEFAULT_PROBABILITY = 0.5;
 
         /** Random number generator. */
-        private WevoRandom random;
+        private wevoRandom random;
 
         /**
         * Creates a uniform crossover object.
         * @param random Random to be used
         */   
-        public UniformCrossover(WevoRandom random)
+        public UniformCrossover(wevoRandom random)
         {
             this.random = random;
         }

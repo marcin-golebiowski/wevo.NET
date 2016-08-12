@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace wEvo.NET.Core.Operators
+namespace wevo.NET.Core.Operators
 {
     /**
     * Returns better half of the individuals in the population.
@@ -9,7 +9,7 @@ namespace wEvo.NET.Core.Operators
     *
     * @param <T> Type of the individuals the operator should work on.
     */
-    public class BestFractionSelection<T> where T : Individuals.Individual
+    public class BestFractionSelection<T> : Operator<T> where T : Individuals.Individual
     {
         private class IndividualsComparer : IComparer<T>
         {
@@ -49,8 +49,7 @@ namespace wEvo.NET.Core.Operators
          * @param objectiveFunction Objective function to score individuals against.
          * @param fraction Fraction of individuals to promote.
          */
-        public BestFractionSelection(ObjectiveFunction<T> objectiveFunction,
-            double fraction)
+        public BestFractionSelection(ObjectiveFunction<T> objectiveFunction, double fraction)
         {
             this.objectiveFunction = objectiveFunction;
             this.ratio = fraction;

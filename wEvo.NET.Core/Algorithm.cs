@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace wEvo.NET.Core
+namespace wevo.NET.Core
 {
     /**
     * Encapsulates the list of operators, evaluators, termination conditions, etc.

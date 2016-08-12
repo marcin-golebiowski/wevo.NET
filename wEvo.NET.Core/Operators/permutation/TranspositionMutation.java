@@ -1,5 +1,5 @@
 /*
- * Wevo2 - Distributed Evolutionary Computation Library.
+ * wevo2 - Distributed Evolutionary Computation Library.
  * Copyright (C) 2009 Marcin Brodziak
  *
  * This library is free software; you can redistribute it and/or
@@ -22,7 +22,7 @@ package engine.operators.permutation;
 import engine.Operator;
 import engine.Population;
 import engine.individuals.Permutation;
-import engine.utils.WevoRandom;
+import engine.utils.wevoRandom;
 
 /**
  * A mutation for individuals representing permutations.
@@ -40,7 +40,7 @@ public class TranspositionMutation
   private double mutationProbability;
 
   /** Random number generator. */
-  private WevoRandom randomGenerator;
+  private wevoRandom randomGenerator;
 
   /**
    * Constructor.
@@ -48,7 +48,7 @@ public class TranspositionMutation
    * @param probability Probability of a individual mutation.
    */
   public TranspositionMutation(
-      final WevoRandom generator,
+      final wevoRandom generator,
       final double probability) {
     this.randomGenerator = generator;
     this.mutationProbability = probability;

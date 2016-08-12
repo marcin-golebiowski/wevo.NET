@@ -1,5 +1,5 @@
 /*
- * Wevo2 - Distributed Evolutionary Computation Library.
+ * wevo2 - Distributed Evolutionary Computation Library.
  * Copyright (C) 2009 Marcin Brodziak
  *
  * This library is free software; you can redistribute it and/or
@@ -26,7 +26,7 @@ import java.util.Random;
  * @author Karol Stosiek (karol.stosiek@gmail.com)
  * @author Michal Anglart (anglart.michal@gmail.com)
  */
-public class JavaRandom implements WevoRandom {
+public class JavaRandom implements wevoRandom {
 
   /** Random number generator. */
   private Random generator;
@@ -40,7 +40,7 @@ public class JavaRandom implements WevoRandom {
    * Constructor using current time as seed.
    * @param clock Time measurement utility.
    */
-  public JavaRandom(WevoClock clock) {
+  public JavaRandom(wevoClock clock) {
     this(clock.getCurrentTimeMillis());
   }
 

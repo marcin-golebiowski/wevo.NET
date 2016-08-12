@@ -1,5 +1,5 @@
 /*
- * Wevo2 - Distributed Evolutionary Computation Library.
+ * wevo2 - Distributed Evolutionary Computation Library.
  * Copyright (C) 2009 Marcin Brodziak
  *
  * This library is free software; you can redistribute it and/or
@@ -27,7 +27,7 @@ import engine.Operator;
 import engine.Population;
 import engine.individuals.BinaryVector;
 import engine.utils.JavaRandom;
-import engine.utils.WevoRandom;
+import engine.utils.wevoRandom;
 
 /**
  * Uniform crossover operator. Offsprings have equal probability
@@ -41,7 +41,7 @@ public class UniformCrossover implements Operator<BinaryVector> {
   private static final double DEFAULT_PROBABILITY = 0.5;
 
   /** Random number generator. */
-  private final WevoRandom random;
+  private final wevoRandom random;
 
   /**
    * Creates a uniform crossover object.

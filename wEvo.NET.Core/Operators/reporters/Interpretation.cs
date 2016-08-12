@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace wEvo.NET.Core.Operators.Reporters
+namespace wevo.NET.Core.Operators.Reporters
 {
     /**
     * A interface for providing an interpretation to an individual.
@@ -14,6 +14,6 @@ namespace wEvo.NET.Core.Operators.Reporters
          * @param individual Individual to be interpreted.
          * @return String based interpretation of the individual.
          */
-        String interprete(T individual);
+        String Interprete(T individual);
     }
 }
