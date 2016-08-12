@@ -7,7 +7,7 @@ namespace wevo.NET.Core.Operators.Real
     * An operator inspired by differential evolution. Resulting vector is of a form
     * <code>offsprint = parent1 + alpha * (parent2 - parent3)</code>. 
     * 
-    * @author Marcin Brodziak (marcin.brodziak@gmail.com)
+    (marcin.brodziak@gmail.com)
     */
     public class DifferentialEvolution : Operator<RealVector>
     {

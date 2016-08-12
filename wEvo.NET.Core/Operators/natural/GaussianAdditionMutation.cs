@@ -1,4 +1,21 @@
-﻿using System;
+﻿/*
+ * This library is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Lesser General Public
+ * License as published by the Free Software Foundation; either
+ * version 2.1 of the License, or (at your option) any later version.
+ *
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * Lesser General Public License for more details.
+
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this library; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor,
+ * Boston, MA  02110-1301  USA
+ */
+
+using System;
 using System.Collections.Generic;
 using wevo.NET.Core.Individuals;
 using wevo.NET.Core.Utils;
@@ -9,7 +26,6 @@ namespace wevo.NET.Core.Operators.Natural
     * For each gene of each individual with given probability a mutation occurs.
     * The mutation draws  a number from gaussian distribution with standard 
     * deviation sigma and mean 0, adds it to the value of the gene.
-    * @author Marcin Brodziak (marcin.brodziak@gmail.com)
     */
     public class GaussianAdditionMutation : Operator<NaturalVector>
     {
@@ -29,8 +45,7 @@ namespace wevo.NET.Core.Operators.Natural
         * mean 0, adds it to the value of the gene
         * and rounds to nearest natural number.
         * @param random Random number genarator.
-        * @param probability Probability of mutation for each gene 
-        *     of each individual.
+        * @param probability Probability of mutation for each gene of each individual.
         * @param sigma Standard deviation in gaussian distribution.
         */
         public GaussianAdditionMutation(wevoRandom random, double probability, double sigma)

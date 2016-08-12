@@ -1,10 +1,26 @@
-﻿using System.Collections.Generic;
+﻿/*
+ * This library is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Lesser General Public
+ * License as published by the Free Software Foundation; either
+ * version 2.1 of the License, or (at your option) any later version.
+ *
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * Lesser General Public License for more details.
+
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this library; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor,
+   Boston, MA  02110-1301  USA
+ */
+
+using System.Collections.Generic;
 
 namespace wevo.NET.Core
 {
     /**
     * Encapsulates the list of operators, evaluators, termination conditions, etc.
-    * @author Marcin Brodziak (marcin@nierobcietegowdomu.pl)
     *
     * @param <T> Type of the individuals to be evolved.
     */
@@ -46,7 +62,7 @@ namespace wevo.NET.Core
          * Adds exit point to the algorithm, if the condition is met, the algorithm
          * terminates at the earliest possible point.
          * @param terminationCondition Termination condition which, when met, 
-         *      terminates the execution of the algorithm. 
+             terminates the execution of the algorithm. 
          */
         public void AddExitPoint(TerminationCondition<T> terminationCondition)
         {
@@ -83,7 +99,7 @@ namespace wevo.NET.Core
             }
         }
 
-        /**  Sets true to flag which forces termination condition to reset. */
+        /*Sets true to flag which forces termination condition to reset. */
         public void Reset()
         {
             shouldBeReset = true;
