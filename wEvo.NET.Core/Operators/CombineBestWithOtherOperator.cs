@@ -62,7 +62,7 @@ namespace wevo.NET.Core.Operators
                 T bestIndividual = population.GetIndividuals()[0];
                 for (int i = 1; i < population.Size(); i++)
                 {
-                    if (function.Compute(population.GetIndividuals()[i]) > function.Compute(bestIndividual))
+                    if (function(population.GetIndividuals()[i]) > function(bestIndividual))
                     {
                         bestIndividual = population.GetIndividuals()[i];
                     }

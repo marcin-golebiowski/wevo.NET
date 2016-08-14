@@ -60,7 +60,7 @@ namespace wevo.NET.Core
                 map[individual] = map[individual]; // Update the access time!
                 return;
             }
-            double v = function.Compute(individual);
+            double v = function(individual);
 
             lock (map) {
                 map.Add(individual, v);

@@ -43,8 +43,8 @@ namespace wevo.NET.Core.Operators
 
             public int Compare(T o1, T o2)
             {
-                Double v1 = objectiveFunction.Compute(o1);
-                Double v2 = objectiveFunction.Compute(o2);
+                Double v1 = objectiveFunction(o1);
+                Double v2 = objectiveFunction(o2);
                 if (v1 > v2)
                 {
                     return -1;

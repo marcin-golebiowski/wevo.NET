@@ -57,16 +57,16 @@ namespace wevo.NET.Core.Exitcriteria
         public bool IsSatisfied(Population<T> population)
         {
             var individuals = population.GetIndividuals();
-            individuals.Sort((T o1, T o2) => objFunction.Compute(o1) > objFunction.Compute(o2) ? 1 : -1);
+            individuals.Sort((T o1, T o2) => objFunction(o1) > objFunction(o2) ? 1 : -1);
 
             if (individuals.Count == 0)
             {
                 throw new System.Exception("Population is empty");
             }
 
-            T bestIndividual = individuals[0];
+            T bestIndividual = individuals[individuals.Count - 1];
 
-            if (individual != null && objFunction.Compute(bestIndividual) <= objFunction.Compute(individual))
+            if (individual != null && objFunction(bestIndividual) <= objFunction(individual))
             {
                 iterationsWithNoChange++;
             }

@@ -29,7 +29,7 @@ namespace wevo.NET.Core.Tests
     public class LruMapTest
     {
         [TestMethod]
-        public void LruMap1()
+        public void LruMap()
         {
             LruMap<string, int> m = new LruMap<string, int>(2);
 

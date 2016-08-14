@@ -2,7 +2,6 @@ C:\Dev\Source\wevo.net\wevo.NET\wEvo.NET.Core\wevo.NET.Core.Tests\obj\Debug\wevo
 C:\Dev\Source\wevo.net\wevo.NET\wEvo.NET.Core\wevo.NET.Core.Tests\bin\Debug\wevo.NET.Core.Tests.dll
 C:\Dev\Source\wevo.net\wevo.NET\wEvo.NET.Core\wevo.NET.Core.Tests\bin\Debug\wevo.NET.Core.Tests.pdb
 C:\Dev\Source\wevo.net\wevo.NET\wEvo.NET.Core\wevo.NET.Core.Tests\bin\Debug\CSharpTest.Net.Collections.dll
-C:\Dev\Source\wevo.net\wevo.NET\wEvo.NET.Core\wevo.NET.Core.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 C:\Dev\Source\wevo.net\wevo.NET\wEvo.NET.Core\wevo.NET.Core.Tests\bin\Debug\wEvo.NET.Core.dll
 C:\Dev\Source\wevo.net\wevo.NET\wEvo.NET.Core\wevo.NET.Core.Tests\bin\Debug\wEvo.NET.Core.pdb
 C:\Dev\Source\wevo.net\wevo.NET\wEvo.NET.Core\wevo.NET.Core.Tests\bin\Debug\CSharpTest.Net.Collections.xml

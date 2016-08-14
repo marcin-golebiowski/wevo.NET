@@ -88,7 +88,7 @@ namespace wevo.NET.Core.Operators.Reporters
             logger.Info("Population size " + population.Size());
             foreach (ObjectiveFunction<T> o in objFunction)
             {
-                logger.Info("Objective value of " + o + " for best individual is " + o.Compute(bestIndividual));
+                logger.Info("Objective value of " + o + " for best individual is " + o(bestIndividual));
                 logger.Info("Mean value for " + o + " is " + meanObjectiveFunctionValues[o] / population.Size());
             }
             UpdateTimer();
@@ -130,8 +130,8 @@ namespace wevo.NET.Core.Operators.Reporters
                 bool isBetter = true;
                 foreach (ObjectiveFunction<T> function in objFunction)
                 {
-                    double individualObjFunctionValue = function.Compute(individual);
-                    if (individualObjFunctionValue < function.Compute(bestIndividual))
+                    double individualObjFunctionValue = function(individual);
+                    if (individualObjFunctionValue < function(bestIndividual))
                     {
                         isBetter = false;
                     }

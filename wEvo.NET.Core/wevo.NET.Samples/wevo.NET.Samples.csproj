@@ -51,9 +51,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ObjectiveFunctions\EvOneMax.java" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\wevo.NET.Core.csproj">
       <Project>{f7a43b8f-2c11-42b3-a3d2-9f462fe5b890}</Project>
       <Name>wevo.NET.Core</Name>

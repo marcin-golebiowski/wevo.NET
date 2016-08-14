@@ -42,7 +42,9 @@ namespace wevo.NET.Samples
             int populationSize = 10;
             int len = 100;
             int iterations = 100;
-            var function = new OneMax();
+
+            ObjectiveFunction<BinaryVector> function = OneMax.Compute;
+
             var initialPopulation = BinaryVector.GeneratePopulationOfRandomBinaryIndividuals(new dotNetRandom(), len, populationSize);
 
             Algorithm<BinaryVector> alg = new Algorithm<BinaryVector>(initialPopulation);
@@ -53,7 +55,7 @@ namespace wevo.NET.Samples
             alg.AddEvaluationPoint(new SingleThreadedEvaluator<BinaryVector>(functions));
             alg.AddExitPoint(new MaxIterations<BinaryVector>(iterations));
 
-            alg.AddOperator(new BestFractionSelection<BinaryVector>(new OneMax(), 0.2));
+            alg.AddOperator(new BestFractionSelection<BinaryVector>(function, 0.2));
             alg.AddOperator(new Core.Operators.Binary.UniformCrossover(new dotNetRandom()));
             alg.AddOperator(new UniformProbabilityNegationMutation(0.1, new dotNetRandom()));
 
