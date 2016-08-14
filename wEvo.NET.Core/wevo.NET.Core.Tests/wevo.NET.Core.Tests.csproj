@@ -54,6 +54,8 @@
   <ItemGroup>
     <Compile Include="Exitcriteria\IndividualsHasntImprovedTest.cs" />
     <Compile Include="Exitcriteria\MaxIterationsTest.cs" />
+    <Compile Include="Individuals\BinaryVectorTest.cs" />
+    <Compile Include="Operators\BestFractionSelectionTest.cs" />
     <Compile Include="Utils\LruMapTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
