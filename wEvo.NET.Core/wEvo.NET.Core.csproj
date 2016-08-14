@@ -87,46 +87,6 @@
     <Compile Include="Utils\SystemClock.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Algorithm.java" />
-    <Content Include="CachedObjectiveFunction.java" />
-    <Content Include="Exitcriteria\IndividualHasntImproved.java" />
-    <Content Include="Exitcriteria\MaxIterations.java" />
-    <Content Include="Factory.java" />
-    <Content Include="Individuals\BinaryVector.java" />
-    <Content Include="Individuals\NaturalVector.java" />
-    <Content Include="Individuals\Permutation.java" />
-    <Content Include="Individuals\RealVector.java" />
-    <Content Include="MultiThreadedEvaluator.java" />
-    <Content Include="ObjectiveFunction.java" />
-    <Content Include="Operator.java" />
-    <Content Include="Operators\AddHardcodedIndividual.java" />
-    <Content Include="Operators\BestFractionSelection.java" />
-    <Content Include="Operators\Binary\UniformCrossover.java" />
-    <Content Include="Operators\Binary\UniformProbabilityNegationMutation.java" />
-    <Content Include="Operators\CombineBestWithOtherOperator.java" />
-    <Content Include="Operators\Natural\GaussianAdditionMutation.java" />
-    <Content Include="Operators\Natural\IntervalCutoff.java" />
-    <Content Include="Operators\Natural\UniformCrossover.java" />
-    <Content Include="Operators\Permutation\InversionMutation.java" />
-    <Content Include="Operators\Permutation\PMXCrossover.java" />
-    <Content Include="Operators\Permutation\TranspositionMutation.java" />
-    <Content Include="Operators\PopulationStatistics.java" />
-    <Content Include="Operators\Real\DifferentialEvolution.java" />
-    <Content Include="Operators\Reporters\BestIndividualAndBasicStats.java" />
-    <Content Include="Operators\Reporters\Interpretation.java" />
-    <Content Include="Population.java" />
-    <Content Include="PopulationEvaluator.java" />
-    <Content Include="SingleThreadedEvaluator.java" />
-    <Content Include="TerminationCondition.java" />
-    <Content Include="Utils\ClockUtilities.java" />
-    <Content Include="Utils\JavaRandom.java" />
-    <Content Include="Utils\ListUtils.java" />
-    <Content Include="Utils\LruMap.java" />
-    <Content Include="Utils\SystemClock.java" />
-    <Content Include="Utils\WevoClock.java" />
-    <Content Include="Utils\WevoRandom.java" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
