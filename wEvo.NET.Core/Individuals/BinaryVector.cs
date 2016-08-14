@@ -94,6 +94,19 @@ namespace wevo.NET.Core.Individuals
             return bits.Length;
         }
 
+        public bool this[int index]
+        {
+            get
+            {
+                return GetBit(index);
+            }
+
+            set
+            {
+                SetBit(index, value);
+            }
+        }
+
         /** {@inheritDoc} */
 
         public override int GetHashCode()
@@ -136,6 +149,23 @@ namespace wevo.NET.Core.Individuals
                 chromosome[j] = generator.NextBoolean();
             }
             return new BinaryVector(chromosome);
+        }
+
+        public static BinaryVector Generate(wevoRandom generator, double[] probability_vector, int individualLength)
+        {
+            if (probability_vector.Length != individualLength)
+            {
+                throw new ArgumentException(
+                    "Probability vector dimension must be equal to space dimension");
+            }
+
+            BinaryVector individual = new BinaryVector(individualLength);
+            for (int i = 0; i < individualLength; i++)
+            {
+                individual[i] = generator.NextProbableBoolean(probability_vector[i]);
+            }
+
+            return individual;
         }
 
         /**

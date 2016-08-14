@@ -83,5 +83,12 @@ namespace wevo.NET.Core.Utils
         {
             return generator.Next((int)lowerLimit, (int)upperLimit);
         }
+
+        public bool NextProbableBoolean(double probability)
+        {
+            if (NextDouble(0, 1) < probability)
+                return true;
+            return false;
+        }
     }
 }

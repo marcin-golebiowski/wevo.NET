@@ -66,6 +66,14 @@ namespace wevo.NET.Core
             }
         }
 
+        public T this[int index]
+        {
+            get
+            {
+                return GetIndividuals()[index];
+            }
+        }
+
         /**
          * Returns individuals in the population.
          * @return List of individuals in the population.
@@ -148,6 +156,11 @@ namespace wevo.NET.Core
             // EmptyBlock on
 
             return population;
+        }
+
+        public int GetSize()
+        {
+            return this.individuals.Count;
         }
 
         /**

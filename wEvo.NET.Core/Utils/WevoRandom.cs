@@ -74,5 +74,8 @@ namespace wevo.NET.Core.Utils
          * @return Next pseudorandom value according to Gaussian distribution.
          */
         double NextGaussian();
+
+
+        bool NextProbableBoolean(double v);
     }
 }
