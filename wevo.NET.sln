@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wevo.NET.Core", "wevo.NET.Core.csproj", "{F7A43B8F-2C11-42B3-A3D2-9F462FE5B890}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wevo.NET.Core", "wevo.NET.Core\wevo.NET.Core.csproj", "{F7A43B8F-2C11-42B3-A3D2-9F462FE5B890}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wevo.NET.Core.Tests", "wevo.NET.Core.Tests\wevo.NET.Core.Tests.csproj", "{60919AC7-9E19-498A-8085-0855EEA1A102}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpTest.Net.Collections", "..\CSharpTest.Net.Collections\CSharpTest.Net.Collections.csproj", "{FBD5EDD1-445C-46D1-A0B2-4B68CB51EADB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpTest.Net.Collections", "CSharpTest.Net.Collections\CSharpTest.Net.Collections.csproj", "{FBD5EDD1-445C-46D1-A0B2-4B68CB51EADB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpTest.Net.Collections.Test", "..\CSharpTest.Net.CollectionsTest\CSharpTest.Net.Collections.Test.csproj", "{097601FB-7E62-47DA-8E48-B56C9AD5DF20}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpTest.Net.Collections.Test", "CSharpTest.Net.CollectionsTest\CSharpTest.Net.Collections.Test.csproj", "{097601FB-7E62-47DA-8E48-B56C9AD5DF20}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpTest.Net.BPlusTree.Test", "..\CSharpTest.Net.BPlusTreeTest\CSharpTest.Net.BPlusTree.Test.csproj", "{F97601FB-7E62-47DA-8E48-B56C9AD5DF20}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpTest.Net.BPlusTree.Test", "CSharpTest.Net.BPlusTreeTest\CSharpTest.Net.BPlusTree.Test.csproj", "{F97601FB-7E62-47DA-8E48-B56C9AD5DF20}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wevo.NET.Samples", "wevo.NET.Samples\wevo.NET.Samples.csproj", "{AA7D6789-B283-4F61-BEDA-1C2F3A372EF9}"
 EndProject

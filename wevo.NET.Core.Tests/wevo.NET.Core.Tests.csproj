@@ -71,11 +71,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\CSharpTest.Net.Collections\CSharpTest.Net.Collections.csproj">
+    <ProjectReference Include="..\CSharpTest.Net.Collections\CSharpTest.Net.Collections.csproj">
       <Project>{fbd5edd1-445c-46d1-a0b2-4b68cb51eadb}</Project>
       <Name>CSharpTest.Net.Collections</Name>
     </ProjectReference>
-    <ProjectReference Include="..\wevo.NET.Core.csproj">
+    <ProjectReference Include="..\wevo.NET.Core\wevo.NET.Core.csproj">
       <Project>{f7a43b8f-2c11-42b3-a3d2-9f462fe5b890}</Project>
       <Name>wevo.NET.Core</Name>
     </ProjectReference>
