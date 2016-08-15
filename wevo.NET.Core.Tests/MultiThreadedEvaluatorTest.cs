@@ -1,6 +1,7 @@
-/*
- * Wevo2 - Distributed Evolutionary Computation Library.
- * Copyright (C) 2009 Marcin Brodziak
+﻿/*
+ * wevo.NET - Distributed Evolutionary Computation Library
+ *
+ * Based on wevo and wevo2 libraries.
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -15,23 +16,26 @@
  * You should have received a copy of the GNU Lesser General Public
  * License along with this library; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor,
- *    Boston, MA  02110-1301  USA
+   Boston, MA  02110-1301  USA
  */
-package engine;
 
-import org.testng.annotations.Test;
+using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-/**
- * Test for {@link MultiThreadedEvaluator}.
- * @author Marcin Brodziak (marcin.brodziak@gmail.com)
- */
-@Test
-public class MultiThreadedEvaluatorTest extends PopulationEvaluatorTest {
+namespace wevo.NET.Core.Tests
+{
+    [TestClass]
+    public class MultiThreadedEvaluatorTest : PopulationEvaluatorTest
+    {
+        public override PopulationEvaluator<DummyIndividual> GetEvaluator()
+        {
+            return new MultiThreadedTaskEvaluator<DummyIndividual>(CreateObjectiveFunctions());
+        }
 
-  /** {@inheritDoc} */
-  @Override
-  public PopulationEvaluator<DummyIndividual> getEvaluator() {
-    return new MultiThreadedEvaluator<DummyIndividual>(
-        createObjectiveFunctions());
-  }
+        [TestMethod]
+        public void TestObjectiveFunctionsMultiThreaded()
+        {
+            base.TestObjectiveFunctions();
+        }
+    }
 }
