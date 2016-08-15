@@ -23,7 +23,7 @@ using System.Collections.Generic;
 using wevo.NET.Core;
 using wevo.NET.Core.Utils;
 
-namespace wEvo.NET.Core.Operators.Permutation
+namespace wevo.NET.Core.Operators.Permutation
 {
     public class PMXCrossover : Operator<wevo.NET.Core.Individuals.Permutation>
     {

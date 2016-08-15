@@ -55,14 +55,14 @@ namespace wevo.NET.Core
          */
         internal void ComputeInternal(T individual)
         {
-            if (map.ContainsKey(individual))
+            lock (map)
             {
-                map[individual] = map[individual]; // Update the access time!
-                return;
-            }
-            double v = function(individual);
-
-            lock (map) {
+                if (map.ContainsKey(individual))
+                {
+                    map[individual] = map[individual]; // Update the access time!
+                    return;
+                }
+                double v = function(individual);
                 map.Add(individual, v);
             }
         }

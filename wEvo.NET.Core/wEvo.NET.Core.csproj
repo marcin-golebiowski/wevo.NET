@@ -7,8 +7,8 @@
     <ProjectGuid>{F7A43B8F-2C11-42B3-A3D2-9F462FE5B890}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>wEvo.NET.Core</RootNamespace>
-    <AssemblyName>wEvo.NET.Core</AssemblyName>
+    <RootNamespace>wevo.NET.Core</RootNamespace>
+    <AssemblyName>wevo.NET.Core</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

@@ -25,7 +25,7 @@ using wevo.NET.Core;
 using wevo.NET.Core.Individuals;
 using wevo.NET.Core.Utils;
 
-namespace wEvo.NET.Core.Operators.Binary
+namespace wevo.NET.Core.Operators.Binary
 {
     /**
     * Sample implementation of CGA operator for BinaryVector.

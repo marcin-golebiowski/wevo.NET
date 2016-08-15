@@ -32,7 +32,6 @@ using wevo.NET.Core.Operators.Natural;
 using wevo.NET.Core.Operators.Reporters;
 using wevo.NET.Core.Operators.Reporters.Interpretations;
 using wevo.NET.Core.Utils;
-using wEvo.NET.Core.Operators.Binary;
 
 namespace wevo.NET.Samples
 {
@@ -44,7 +43,7 @@ namespace wevo.NET.Samples
 
             //CGAAlgorithm();
 
-            //PBILAlgorithm();
+            PBILAlgorithm();
 
         }
 
@@ -66,7 +65,7 @@ namespace wevo.NET.Samples
             var list = new List<ObjectiveFunction<BinaryVector>>();
             list.Add(function);
 
-            alg.AddOperator(new PBIL(function, 1000, 0.1, 0.1, 0.2, populationSize, len, new dotNetRandom()));
+            alg.AddOperator(new PBIL(function, 10000, 0.1, 0.01, 0.02, populationSize, len, new dotNetRandom()));
             alg.AddOperator(new BestIndividualAndBasicStats<BinaryVector>(list, new BinaryVectorInterpretation()));
 
             alg.Run();
