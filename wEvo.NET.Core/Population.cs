@@ -128,7 +128,21 @@ namespace wevo.NET.Core
             }
 
             Population<T> that = CastToPopulation(obj);
-            return this.individuals.Equals(that.individuals);
+
+            if (this.individuals.Count != that.individuals.Count)
+            {
+                return false;
+            }
+
+            for (int i = 0; i < this.individuals.Count; i++)
+            {
+                if (!this.individuals[i].Equals(that.individuals[i]))
+                {
+                    return false;
+                }
+            }
+
+            return true;
         }
 
         /** {@inheritDoc} */

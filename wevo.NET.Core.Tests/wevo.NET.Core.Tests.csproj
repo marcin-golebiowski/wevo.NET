@@ -67,6 +67,7 @@
     <Compile Include="Individuals\PermutationTest.cs" />
     <Compile Include="Individuals\RealVectorTest.cs" />
     <Compile Include="Operators\BestFractionSelectionTest.cs" />
+    <Compile Include="PopulationTest.cs" />
     <Compile Include="Utils\LruMapTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CachedObjectiveFunctionTest.cs" />
