@@ -50,10 +50,21 @@ namespace wevo.NET.Core
         }
 
         /**
+        * Creates caching wrapper for given objective function.
+        * @param function Objective function to be cached.
+        * @param cacheSize Size of the cache.
+        */
+        public CachedObjectiveFunction(IObjectiveFunction<T> function, int cacheSize)
+        {
+            this.function = function.Compute;
+            map = new LruMap<T, Double>(cacheSize);
+        }
+
+        /**
          * Precomputes value of the objective function.
          * @param individual Individual to be evaluated.
          */
-        internal void ComputeInternal(T individual)
+        public void Precompute(T individual)
         {
             lock (map)
             {

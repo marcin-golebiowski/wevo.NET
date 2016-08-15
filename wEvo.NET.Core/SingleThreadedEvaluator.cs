@@ -45,7 +45,7 @@ namespace wevo.NET.Core
             {
                 foreach (CachedObjectiveFunction<T> objectiveFunction in GetObjectiveFunctions())
                 {
-                    objectiveFunction.ComputeInternal(individual);
+                    objectiveFunction.Precompute(individual);
                 }
             }
         }

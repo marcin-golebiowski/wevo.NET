@@ -39,11 +39,11 @@ namespace wevo.NET.Samples
     {
         static void Main(string[] args)
         {
-            //GenericAlgorithm();
+            GenericAlgorithm();
 
             //CGAAlgorithm();
 
-            PBILAlgorithm();
+            //PBILAlgorithm();
 
         }
 

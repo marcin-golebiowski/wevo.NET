@@ -54,9 +54,9 @@ namespace wevo.NET.Core.Tests.Individuals
                 seq = seq.Returns(i);
             }
 
-            mock.Verify();
-
             RealVector real = RealVector.Generate(mock.Object, 10, 0, 100);
+
+            mock.Verify(m => m.NextDouble(0, 100), Times.Exactly(10));
 
             for (var i = 0; i < 10; i++)
             {

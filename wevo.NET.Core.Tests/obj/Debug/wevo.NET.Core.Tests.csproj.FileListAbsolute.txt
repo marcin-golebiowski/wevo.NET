@@ -12,3 +12,17 @@ C:\Dev\Source\wevo.net\wevo.NET\wEvo.NET.Core\wevo.NET.Core.Tests\bin\Debug\Cast
 C:\Dev\Source\wevo.net\wevo.NET\wEvo.NET.Core\wevo.NET.Core.Tests\bin\Debug\Moq.dll
 C:\Dev\Source\wevo.net\wevo.NET\wEvo.NET.Core\wevo.NET.Core.Tests\bin\Debug\Castle.Core.xml
 C:\Dev\Source\wevo.net\wevo.NET\wEvo.NET.Core\wevo.NET.Core.Tests\bin\Debug\Moq.xml
+C:\Dev\Source\wevo.net\wevo.NET.Core.Tests\bin\Debug\wevo.NET.Core.Tests.dll
+C:\Dev\Source\wevo.net\wevo.NET.Core.Tests\bin\Debug\wevo.NET.Core.Tests.pdb
+C:\Dev\Source\wevo.net\wevo.NET.Core.Tests\bin\Debug\Castle.Core.dll
+C:\Dev\Source\wevo.net\wevo.NET.Core.Tests\bin\Debug\CSharpTest.Net.Collections.dll
+C:\Dev\Source\wevo.net\wevo.NET.Core.Tests\bin\Debug\Moq.dll
+C:\Dev\Source\wevo.net\wevo.NET.Core.Tests\bin\Debug\wevo.NET.Core.dll
+C:\Dev\Source\wevo.net\wevo.NET.Core.Tests\bin\Debug\CSharpTest.Net.Collections.pdb
+C:\Dev\Source\wevo.net\wevo.NET.Core.Tests\bin\Debug\CSharpTest.Net.Collections.xml
+C:\Dev\Source\wevo.net\wevo.NET.Core.Tests\bin\Debug\wevo.NET.Core.pdb
+C:\Dev\Source\wevo.net\wevo.NET.Core.Tests\bin\Debug\Castle.Core.xml
+C:\Dev\Source\wevo.net\wevo.NET.Core.Tests\bin\Debug\Moq.xml
+C:\Dev\Source\wevo.net\wevo.NET.Core.Tests\obj\Debug\wevo.NET.Core.Tests.csprojResolveAssemblyReference.cache
+C:\Dev\Source\wevo.net\wevo.NET.Core.Tests\obj\Debug\wevo.NET.Core.Tests.dll
+C:\Dev\Source\wevo.net\wevo.NET.Core.Tests\obj\Debug\wevo.NET.Core.Tests.pdb

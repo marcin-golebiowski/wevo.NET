@@ -69,7 +69,7 @@ namespace wevo.NET.Core
                             break;
                         }
 
-                        fun.ComputeInternal((T)individual);
+                        fun.Precompute((T)individual);
                     }
                 },
                 cts.Token);

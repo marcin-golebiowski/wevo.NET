@@ -6,3 +6,11 @@ C:\Dev\Source\wevo.net\wEvo.NET\wEvo.NET.Core\obj\Debug\wEvo.NET.Core.pdb
 C:\Dev\Source\wevo.net\wevo.NET\wEvo.NET.Core\bin\Debug\CSharpTest.Net.Collections.dll
 C:\Dev\Source\wevo.net\wevo.NET\wEvo.NET.Core\bin\Debug\CSharpTest.Net.Collections.xml
 C:\Dev\Source\wevo.net\wevo.NET\wEvo.NET.Core\bin\Debug\CSharpTest.Net.Collections.pdb
+C:\Dev\Source\wevo.net\wevo.NET.Core\bin\Debug\wevo.NET.Core.dll
+C:\Dev\Source\wevo.net\wevo.NET.Core\bin\Debug\wevo.NET.Core.pdb
+C:\Dev\Source\wevo.net\wevo.NET.Core\bin\Debug\CSharpTest.Net.Collections.dll
+C:\Dev\Source\wevo.net\wevo.NET.Core\bin\Debug\CSharpTest.Net.Collections.pdb
+C:\Dev\Source\wevo.net\wevo.NET.Core\bin\Debug\CSharpTest.Net.Collections.xml
+C:\Dev\Source\wevo.net\wevo.NET.Core\obj\Debug\wevo.NET.Core.csprojResolveAssemblyReference.cache
+C:\Dev\Source\wevo.net\wevo.NET.Core\obj\Debug\wevo.NET.Core.dll
+C:\Dev\Source\wevo.net\wevo.NET.Core\obj\Debug\wevo.NET.Core.pdb
