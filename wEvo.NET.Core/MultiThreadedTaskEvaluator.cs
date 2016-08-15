@@ -32,7 +32,7 @@ namespace wevo.NET.Core
     * 
     * @param <T> Type of individuals to be evaluated.
     */
-    public class MultiThreadedEvaluator<T> : PopulationEvaluator<T> where T : Individuals.Individual
+    public class MultiThreadedTaskEvaluator<T> : PopulationEvaluator<T> where T : Individuals.Individual
     {
         /** Timeout for waiting for executors to compute tasks. */
         private static int TIMEOUT = 1000 * 10;
@@ -47,7 +47,7 @@ namespace wevo.NET.Core
          * Creates multi-threaded evaluator.
          * @param objectiveFunctions List of objective functions to be evaluated.
          */
-        public MultiThreadedEvaluator(List<CachedObjectiveFunction<T>> objectiveFunctions) : base(objectiveFunctions)
+        public MultiThreadedTaskEvaluator(List<CachedObjectiveFunction<T>> objectiveFunctions) : base(objectiveFunctions)
         {
         }
 

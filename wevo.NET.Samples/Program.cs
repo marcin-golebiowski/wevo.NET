@@ -58,7 +58,7 @@ namespace wevo.NET.Samples
             var functions = new List<CachedObjectiveFunction<BinaryVector>>();
             functions.Add(new CachedObjectiveFunction<BinaryVector>(function, 100));
 
-            alg.AddEvaluationPoint(new SingleThreadedEvaluator<BinaryVector>(functions));
+            alg.AddEvaluationPoint(new MultiThreadedTaskEvaluator<BinaryVector>(functions));
             alg.AddExitPoint(new MaxIterations<BinaryVector>(1));
 
 

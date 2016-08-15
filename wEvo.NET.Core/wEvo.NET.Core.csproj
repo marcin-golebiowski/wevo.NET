@@ -51,7 +51,7 @@
     <Compile Include="Individuals\Permutation.cs" />
     <Compile Include="Individuals\RealVector.cs" />
     <Compile Include="IObjectiveFunction.cs" />
-    <Compile Include="MultiThreadedEvaluator.cs" />
+    <Compile Include="MultiThreadedTaskEvaluator.cs" />
     <Compile Include="ObjectiveFunction.cs" />
     <Compile Include="Operator.cs" />
     <Compile Include="Operators\AddHardcodedIndividual.cs" />
