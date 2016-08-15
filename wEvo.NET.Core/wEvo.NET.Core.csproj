@@ -56,6 +56,7 @@
     <Compile Include="Operators\AddHardcodedIndividual.cs" />
     <Compile Include="Operators\BestFractionSelection.cs" />
     <Compile Include="Operators\Binary\CGA.cs" />
+    <Compile Include="Operators\Binary\PBIL.cs" />
     <Compile Include="Operators\Binary\UniformCrossover.cs" />
     <Compile Include="Operators\Binary\UniformProbabilityNegationMutation.cs" />
     <Compile Include="Operators\CombineBestWithOtherOperator.cs" />

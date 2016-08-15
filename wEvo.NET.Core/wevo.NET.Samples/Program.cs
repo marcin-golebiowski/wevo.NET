@@ -42,8 +42,37 @@ namespace wevo.NET.Samples
         {
             //GenericAlgorithm();
 
-            CGAAlgorithm();
+            //CGAAlgorithm();
 
+            //PBILAlgorithm();
+
+        }
+
+        private static void PBILAlgorithm()
+        {
+            int populationSize = 50;
+            int len = 100;
+            ObjectiveFunction<BinaryVector> function = OneMax.Compute;
+            var initialPopulation = BinaryVector.GeneratePopulationOfRandomBinaryIndividuals(new dotNetRandom(), len, populationSize);
+            Algorithm<BinaryVector> alg = new Algorithm<BinaryVector>(initialPopulation);
+
+            var functions = new List<CachedObjectiveFunction<BinaryVector>>();
+            functions.Add(new CachedObjectiveFunction<BinaryVector>(function, 100));
+
+            alg.AddEvaluationPoint(new SingleThreadedEvaluator<BinaryVector>(functions));
+            alg.AddExitPoint(new MaxIterations<BinaryVector>(1));
+
+
+            var list = new List<ObjectiveFunction<BinaryVector>>();
+            list.Add(function);
+
+            alg.AddOperator(new PBIL(function, 1000, 0.1, 0.1, 0.2, populationSize, len, new dotNetRandom()));
+            alg.AddOperator(new BestIndividualAndBasicStats<BinaryVector>(list, new BinaryVectorInterpretation()));
+
+            alg.Run();
+
+
+            Console.ReadLine();
         }
 
         private static void CGAAlgorithm()
