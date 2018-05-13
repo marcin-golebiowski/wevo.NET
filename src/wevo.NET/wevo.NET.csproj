@@ -1,0 +1,8 @@
+﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="CSharpTest.Net.Collections" Version="14.906.1403.1082" />
+  </ItemGroup>
+</Project>

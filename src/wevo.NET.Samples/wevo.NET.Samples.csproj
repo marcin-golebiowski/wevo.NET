@@ -52,9 +52,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\wevo.NET.Core\wevo.NET.Core.csproj">
-      <Project>{f7a43b8f-2c11-42b3-a3d2-9f462fe5b890}</Project>
-      <Name>wevo.NET.Core</Name>
+    <ProjectReference Include="..\wevo.NET\wevo.NET.csproj">
+      <Project>{833778a9-253b-43f5-b8fa-a27f60338e9a}</Project>
+      <Name>wevo.NET</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
