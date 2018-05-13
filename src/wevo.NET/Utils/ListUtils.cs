@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace wevo.NET.Core.Utils
+namespace wevo.NET.Utils
 {
     /**
     * Common utilities for managing lists.

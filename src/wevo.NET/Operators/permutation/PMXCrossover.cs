@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
-using wevo.NET.Core;
-using wevo.NET.Core.Utils;
+using wevo.NET;
+using wevo.NET.Utils;
 
-namespace wevo.NET.Core.Operators.Permutation
+namespace wevo.NET.Operators.Permutation
 {
-    public class PMXCrossover : Operator<wevo.NET.Core.Individuals.Permutation>
+    public class PMXCrossover : Operator< wevo.NET.Individuals.Permutation>
     {
         /** Beginning of the segment. */
         private int segmentBeginning;
@@ -51,7 +51,7 @@ namespace wevo.NET.Core.Operators.Permutation
 
 
         /** {@inheritDoc} */
-        public Population<wevo.NET.Core.Individuals.Permutation> Apply(Population<wevo.NET.Core.Individuals.Permutation> population)
+        public Population<wevo.NET.Individuals.Permutation> Apply(Population<wevo.NET.Individuals.Permutation> population)
         {
             if (generateSegmentBounds)
             {
@@ -60,15 +60,15 @@ namespace wevo.NET.Core.Operators.Permutation
                 segmentLength = randomGenerator.NextInt(0, chromosomeLength - segmentBeginning);
             }
 
-            Population<wevo.NET.Core.Individuals.Permutation> workingCopy = new Population<wevo.NET.Core.Individuals.Permutation>(population);
+            Population<wevo.NET.Individuals.Permutation> workingCopy = new Population<wevo.NET.Individuals.Permutation>(population);
 
             workingCopy.GetIndividuals().Shuffle();
 
-            Population<wevo.NET.Core.Individuals.Permutation> result = new Population<wevo.NET.Core.Individuals.Permutation>();
+            Population<wevo.NET.Individuals.Permutation> result = new Population<wevo.NET.Individuals.Permutation>();
 
             for (int i = 0; i < workingCopy.GetIndividuals().Count / 2; i++)
             {
-                List<wevo.NET.Core.Individuals.Permutation> children = combine(workingCopy.GetIndividuals()[2 * i], workingCopy.GetIndividuals()[2 * i + 1]);
+                List<wevo.NET.Individuals.Permutation> children = combine(workingCopy.GetIndividuals()[2 * i], workingCopy.GetIndividuals()[2 * i + 1]);
                 result.AddIndividual(children[0]);
                 result.AddIndividual(children[1]);
             }
@@ -82,12 +82,12 @@ namespace wevo.NET.Core.Operators.Permutation
          * @param parent2 Second parent.
          * @return List of two children obtained from parents combination.
          */
-        List<wevo.NET.Core.Individuals.Permutation> combine(
-            wevo.NET.Core.Individuals.Permutation parent1,
-            wevo.NET.Core.Individuals.Permutation parent2)
+        List<wevo.NET.Individuals.Permutation> combine(
+            wevo.NET.Individuals.Permutation parent1,
+            wevo.NET.Individuals.Permutation parent2)
         {
 
-            List<wevo.NET.Core.Individuals.Permutation> result = new List<wevo.NET.Core.Individuals.Permutation>(2);
+            List<wevo.NET.Individuals.Permutation> result = new List<wevo.NET.Individuals.Permutation>(2);
 
             int chromosomeLength = parent1.GetValues().Length;
 
@@ -102,8 +102,8 @@ namespace wevo.NET.Core.Operators.Permutation
             ExchangeGenes(child1Chromosome, child2Chromosome, parent1);
             ExchangeGenes(child2Chromosome, child1Chromosome, parent2);
 
-            wevo.NET.Core.Individuals.Permutation child1 = new wevo.NET.Core.Individuals.Permutation(child1Chromosome);
-            wevo.NET.Core.Individuals.Permutation child2 = new wevo.NET.Core.Individuals.Permutation(child2Chromosome);
+            wevo.NET.Individuals.Permutation child1 = new wevo.NET.Individuals.Permutation(child1Chromosome);
+            wevo.NET.Individuals.Permutation child2 = new wevo.NET.Individuals.Permutation(child2Chromosome);
 
             result.Add(child1);
             result.Add(child2);
@@ -120,7 +120,7 @@ namespace wevo.NET.Core.Operators.Permutation
          */
         private void copySegment(
             int[] childChromosome,
-            wevo.NET.Core.Individuals.Permutation parent)
+            wevo.NET.Individuals.Permutation parent)
         {
 
             for (int i = segmentBeginning; i < segmentBeginning + segmentLength; i++)
@@ -167,7 +167,7 @@ namespace wevo.NET.Core.Operators.Permutation
         private void ExchangeGenes(
             int[] affectedChildChromosome,
             int[] unaffectedChildChromosome,
-            wevo.NET.Core.Individuals.Permutation parent)
+            wevo.NET.Individuals.Permutation parent)
         {
 
             int chromosomeLength = affectedChildChromosome.Length;

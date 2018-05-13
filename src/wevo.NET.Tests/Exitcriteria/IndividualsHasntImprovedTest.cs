@@ -1,10 +1,10 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using wevo.NET.Core.Exitcriteria;
+using wevo.NET.Exitcriteria;
 using System.Collections.Generic;
-using wevo.NET.Core.Individuals;
+using wevo.NET.Individuals;
 
-namespace wevo.NET.Core.Tests.Exitcriteria
+namespace wevo.NET.Tests.Exitcriteria
 {
     [TestClass]
     public class IndividualsHasntImprovedTest

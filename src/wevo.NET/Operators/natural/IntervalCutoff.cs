@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using wevo.NET.Core.Individuals;
+using wevo.NET.Individuals;
 
-namespace wevo.NET.Core.Operators.Natural
+namespace wevo.NET.Operators.Natural
 {
     public class IntervalCutoff : Operator<NaturalVector>
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace wevo.NET.Core.Operators
+namespace wevo.NET.Operators
 {
     /**
     * Returns better half of the individuals in the population.

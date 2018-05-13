@@ -1,6 +1,6 @@
-﻿using wevo.NET.Core.Utils;
+﻿using wevo.NET.Utils;
 
-namespace wevo.NET.Core.Operators.Permutation
+namespace wevo.NET.Operators.Permutation
 {
     class TranspositionMutation : Operator<Individuals.Permutation>
     {

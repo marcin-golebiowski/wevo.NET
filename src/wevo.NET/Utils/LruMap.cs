@@ -1,7 +1,7 @@
 ﻿using System;
 using CSharpTest.Net.Collections;
 
-namespace wevo.NET.Core.Utils
+namespace wevo.NET.Utils
 {
     /**
     * Cache of least recently used objects.

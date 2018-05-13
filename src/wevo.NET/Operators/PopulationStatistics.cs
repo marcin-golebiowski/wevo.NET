@@ -1,4 +1,4 @@
-﻿namespace wevo.NET.Core.Operators
+﻿namespace wevo.NET.Operators
 {
     /**
     * Tracks some statistics of population.

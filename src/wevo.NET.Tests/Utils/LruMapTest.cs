@@ -1,8 +1,8 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using wevo.NET.Core.Utils;
+using wevo.NET.Utils;
 
-namespace wevo.NET.Core.Tests
+namespace wevo.NET.Tests
 {
     [TestClass]
     public class LruMapTest

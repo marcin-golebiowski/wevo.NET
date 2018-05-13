@@ -1,9 +1,9 @@
 ﻿using System;
-using wevo.NET.Core;
-using wevo.NET.Core.Individuals;
-using wevo.NET.Core.Utils;
+using wevo.NET;
+using wevo.NET.Individuals;
+using wevo.NET.Utils;
 
-namespace wevo.NET.Core.Operators.Binary
+namespace wevo.NET.Operators.Binary
 {
     /**
     * Sample implementation of CGA operator for BinaryVector.

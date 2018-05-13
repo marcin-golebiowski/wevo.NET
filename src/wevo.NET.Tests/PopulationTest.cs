@@ -1,10 +1,10 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using System.Collections.Generic;
-using wevo.NET.Core.Individuals;
-using wevo.NET.Core.Utils;
+using wevo.NET.Individuals;
+using wevo.NET.Utils;
 
-namespace wevo.NET.Core.Tests
+namespace wevo.NET.Tests
 {
     [TestClass]
     public class PopulationTest

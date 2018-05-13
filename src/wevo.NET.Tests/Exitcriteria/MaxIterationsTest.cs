@@ -1,9 +1,9 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using wevo.NET.Core.Individuals;
-using wevo.NET.Core.Exitcriteria;
+using wevo.NET.Individuals;
+using wevo.NET.Exitcriteria;
 
-namespace wevo.NET.Core.Tests.Exitcriteria
+namespace wevo.NET.Tests.Exitcriteria
 {
     [TestClass]
     public class MaxIterationsTest

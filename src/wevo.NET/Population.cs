@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using wevo.NET.Core.Utils;
+using wevo.NET.Utils;
 
-namespace wevo.NET.Core
+namespace wevo.NET
 {
     /**
     * Represents the population on which {@link Algorithm} works.

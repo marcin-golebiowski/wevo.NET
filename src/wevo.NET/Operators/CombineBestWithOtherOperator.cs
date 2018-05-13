@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using wevo.NET.Core.Utils;
+using wevo.NET.Utils;
 
-namespace wevo.NET.Core.Operators
+namespace wevo.NET.Operators
 {
     /**
     * Takes a result of another operator plus the best individual from
@@ -48,7 +48,7 @@ namespace wevo.NET.Core.Operators
                     }
                 }
 
-                result = Core.Population<T>.RemoveRandomIndividual(random, result);
+                result = Population<T>.RemoveRandomIndividual(random, result);
                 result.AddIndividual(bestIndividual);
             }
             return result;

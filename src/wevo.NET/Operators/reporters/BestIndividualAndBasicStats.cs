@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using wevo.NET.Core.Utils;
+using wevo.NET.Utils;
 
-namespace wevo.NET.Core.Operators.Reporters
+namespace wevo.NET.Operators.Reporters
 {
     public class BestIndividualAndBasicStats<T> : Operator<T> where T : Individuals.Individual
     {

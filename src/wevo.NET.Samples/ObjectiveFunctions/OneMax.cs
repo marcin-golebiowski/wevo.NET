@@ -1,8 +1,8 @@
 ﻿
-using wevo.NET.Core;
-using wevo.NET.Core.Individuals;
+using wevo.NET;
+using wevo.NET.Individuals;
 
-namespace wevo.NET.Samples.ObjectiveFunctions
+namespace  wevo.NET.Samples.ObjectiveFunctions
 {
     internal class OneMax
     {

@@ -1,7 +1,7 @@
 ﻿using System.Text;
-using wevo.NET.Core.Individuals;
+using wevo.NET.Individuals;
 
-namespace wevo.NET.Core.Operators.Reporters.Interpretations
+namespace wevo.NET.Operators.Reporters.Interpretations
 {
     public class BinaryVectorInterpretation : Interpretation<BinaryVector>
     {

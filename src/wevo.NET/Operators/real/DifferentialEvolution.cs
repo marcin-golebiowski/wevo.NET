@@ -1,13 +1,11 @@
 ﻿using System.Collections.Generic;
-using wevo.NET.Core.Individuals;
+using wevo.NET.Individuals;
 
-namespace wevo.NET.Core.Operators.Real
+namespace wevo.NET.Operators.Real
 {
     /**
     * An operator inspired by differential evolution. Resulting vector is of a form
     * <code>offsprint = parent1 + alpha * (parent2 - parent3)</code>. 
-    * 
-    (marcin.brodziak@gmail.com)
     */
     public class DifferentialEvolution : Operator<RealVector>
     {

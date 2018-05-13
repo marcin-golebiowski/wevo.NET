@@ -1,4 +1,4 @@
-﻿namespace wevo.NET.Core.Utils
+﻿namespace wevo.NET.Utils
 {
     using System;
     using System.Collections;

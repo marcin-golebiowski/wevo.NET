@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace wevo.NET.Core.Operators.Reporters
+namespace wevo.NET.Operators.Reporters
 {
     /**
     * A interface for providing an interpretation to an individual.

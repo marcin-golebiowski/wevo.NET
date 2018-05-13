@@ -1,8 +1,8 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using wevo.NET.Core.Individuals;
+using wevo.NET.Individuals;
 
-namespace wevo.NET.Core.Tests.Individuals
+namespace wevo.NET.Tests.Individuals
 {
     [TestClass]
     public class NaturalVectorTest

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace wevo.NET.Core
+namespace wevo.NET
 {
     /**
     * Evaluator that computes values of objective functions for given population.

@@ -1,8 +1,8 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using wevo.NET.Core.Individuals;
+using wevo.NET.Individuals;
 
-namespace wevo.NET.Core.Tests.Utils
+namespace wevo.NET.Tests.Utils
 {
     /**
     * Test for {@link CachedObjectiveFunction}.
@@ -12,7 +12,6 @@ namespace wevo.NET.Core.Tests.Utils
     {
         /**
          * Sample objective function counting how many times it was called.
-         * @author marcin.brodziak@gmail.com (Marcin Brodziak)
          */
         private class SampleObjectiveFunction : IObjectiveFunction<BinaryVector>
         {

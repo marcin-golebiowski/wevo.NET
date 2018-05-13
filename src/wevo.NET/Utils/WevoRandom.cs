@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace wevo.NET.Core.Utils
+namespace wevo.NET.Utils
 {
     /**
     * Interface for random number generators.

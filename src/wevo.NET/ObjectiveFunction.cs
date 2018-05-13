@@ -1,4 +1,4 @@
-﻿namespace wevo.NET.Core
+﻿namespace wevo.NET
 {
     /**
       * Computes value of the objective function.

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace wevo.NET.Core.Utils
+namespace wevo.NET.Utils
 {
     class Arrays<T>
     {

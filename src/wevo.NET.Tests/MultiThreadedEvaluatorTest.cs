@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace wevo.NET.Core.Tests
+namespace wevo.NET.Tests
 {
     [TestClass]
     public class MultiThreadedEvaluatorTest : PopulationEvaluatorTest

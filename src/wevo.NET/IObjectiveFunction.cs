@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace wevo.NET.Core
+namespace wevo.NET
 {
     public interface IObjectiveFunction<T> where T : Individuals.Individual
     {

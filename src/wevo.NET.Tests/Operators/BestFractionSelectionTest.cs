@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using wevo.NET.Core.Individuals;
-using wevo.NET.Core.Operators;
+using wevo.NET.Individuals;
+using wevo.NET.Operators;
 
-namespace wevo.NET.Core.Tests.Operators
+namespace wevo.NET.Tests.Operators
 {
     /// <summary>
     /// Summary description for BestFractionSelectionTest

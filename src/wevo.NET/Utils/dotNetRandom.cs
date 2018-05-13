@@ -1,7 +1,7 @@
 ﻿using System;
-using wevo.NET.Core.Utils.Superbest_random;
+using wevo.NET.Utils.Superbest_random;
 
-namespace wevo.NET.Core.Utils
+namespace wevo.NET.Utils
 {
     /**
     * Standard random number generator based on .NET random number generator.

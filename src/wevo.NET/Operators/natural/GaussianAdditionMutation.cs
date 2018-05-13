@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using wevo.NET.Core.Individuals;
-using wevo.NET.Core.Utils;
+using wevo.NET.Individuals;
+using wevo.NET.Utils;
 
-namespace wevo.NET.Core.Operators.Natural
+namespace wevo.NET.Operators.Natural
 {
     /**
     * For each gene of each individual with given probability a mutation occurs.

@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Text;
-using wevo.NET.Core.Utils;
+using wevo.NET.Utils;
 
-namespace wevo.NET.Core.Individuals
+namespace wevo.NET.Individuals
 {
     /**
     * Vector of natural numbers.

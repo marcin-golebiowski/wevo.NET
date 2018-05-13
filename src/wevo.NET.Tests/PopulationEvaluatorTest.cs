@@ -1,15 +1,14 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using wevo.NET.Core.Individuals;
+using wevo.NET.Individuals;
 using System.Collections.Generic;
 
-namespace wevo.NET.Core.Tests
+namespace wevo.NET.Tests
 {
     public abstract class PopulationEvaluatorTest
     {
         /**
         * Dummy individual only for testing if evaluators work fine.
-        * @author Marcin Brodziak (marcin.brodziak@gmail.com)
         */
         public class DummyIndividual : Individual
         {

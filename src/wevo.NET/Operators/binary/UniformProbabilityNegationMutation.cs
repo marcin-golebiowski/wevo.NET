@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using wevo.NET.Core.Individuals;
-using wevo.NET.Core.Utils;
+using wevo.NET.Individuals;
+using wevo.NET.Utils;
 
-namespace wevo.NET.Core.Operators.Binary
+namespace wevo.NET.Operators.Binary
 {
     /**
     * Performs mutation of the individual by randomly negating one 
