@@ -7,7 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wevo.NET.Samples", "wevo.NE
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wevo.NET", "wevo.NET\wevo.NET.csproj", "{833778A9-253B-43F5-B8FA-A27F60338E9A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wevo.NET.Core.Tests", "wevo.NET.Tests\wevo.NET.Core.Tests.csproj", "{60919AC7-9E19-498A-8085-0855EEA1A102}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wevo.NET.Tests", "wevo.NET.Tests\wevo.NET.Tests.csproj", "{60919AC7-9E19-498A-8085-0855EEA1A102}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F26B1E5B-AD5C-4FED-91B0-4A8B67B17E2B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{3BF55246-AA12-421E-B3D2-D09D7F81A416}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,6 +34,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AA7D6789-B283-4F61-BEDA-1C2F3A372EF9} = {3BF55246-AA12-421E-B3D2-D09D7F81A416}
+		{60919AC7-9E19-498A-8085-0855EEA1A102} = {F26B1E5B-AD5C-4FED-91B0-4A8B67B17E2B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {06AFEF9B-6176-4E58-820B-2DBB4CBC7579}
