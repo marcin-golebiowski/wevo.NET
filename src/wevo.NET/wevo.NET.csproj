@@ -3,6 +3,11 @@
     <TargetFrameworks>netstandard2.0;net40</TargetFrameworks>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Remove="Operators\obj\**" />
+    <EmbeddedResource Remove="Operators\obj\**" />
+    <None Remove="Operators\obj\**" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="CSharpTest.Net.Collections" Version="14.906.1403.1082" />
   </ItemGroup>
 </Project>
