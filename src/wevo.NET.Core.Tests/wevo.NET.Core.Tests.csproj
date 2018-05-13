@@ -39,6 +39,9 @@
       <HintPath>..\packages\Castle.Core.3.3.3\lib\net45\Castle.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="CSharpTest.Net.Collections, Version=14.906.1403.1082, Culture=neutral, PublicKeyToken=06aee00cce822474, processorArchitecture=MSIL">
+      <HintPath>..\packages\CSharpTest.Net.Collections.14.906.1403.1082\lib\net40\CSharpTest.Net.Collections.dll</HintPath>
+    </Reference>
     <Reference Include="Moq, Version=4.5.21.0, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
       <HintPath>..\packages\Moq.4.5.21\lib\net45\Moq.dll</HintPath>
       <Private>True</Private>
@@ -76,10 +79,6 @@
     <Compile Include="CachedObjectiveFunctionTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CSharpTest.Net.Collections\CSharpTest.Net.Collections.csproj">
-      <Project>{fbd5edd1-445c-46d1-a0b2-4b68cb51eadb}</Project>
-      <Name>CSharpTest.Net.Collections</Name>
-    </ProjectReference>
     <ProjectReference Include="..\wevo.NET.Core\wevo.NET.Core.csproj">
       <Project>{f7a43b8f-2c11-42b3-a3d2-9f462fe5b890}</Project>
       <Name>wevo.NET.Core</Name>
