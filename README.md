@@ -1,3 +1,3 @@
 # wevo.NET
 
-A simple evolutionary computation library for .NET
+A simple evolutionary algorithms computation library for .NET
